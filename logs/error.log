@@ -1,0 +1,887 @@
+2021-11-25 16:44:12 Error: [Cake\Controller\Exception\MissingActionException] Action ClientesController::adicionar() could not be found, or is not accessible. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Controller/Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'ClientesController',
+  'action' => 'adicionar',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /clientes/adicionar
+
+
+2021-11-26 01:32:17 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:235)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(154): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /clientes/adicionar.php
+Referer URL: http://localhost:8765/clientes/adicionar
+
+
+2021-11-26 01:32:22 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:235)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(154): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /clientes/adicionar.php
+Referer URL: http://localhost:8765/clientes/adicionar
+
+
+2021-11-26 01:33:09 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:235)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(154): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /clientes/adicionar.php
+Referer URL: http://localhost:8765/clientes/adicionar
+
+
+2021-11-26 17:18:16 Error: [Cake\View\Exception\MissingTemplateException] Template file "Clientes/adicionar.ctp" is missing. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/View/View.php:1605)
+Exception Attributes: array (
+  'file' => 'Clientes/adicionar.ctp',
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\View->_getViewFileName('Clientes/adicio...')
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#21 {main}
+Request URL: /clientes/adicionar
+Referer URL: http://localhost:8765/clientes/adicionar
+
+
+2021-11-26 17:18:19 Error: [Cake\View\Exception\MissingTemplateException] Template file "Clientes/index.ctp" is missing. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/View/View.php:1605)
+Exception Attributes: array (
+  'file' => 'Clientes/index.ctp',
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\View->_getViewFileName('Clientes/index')
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#21 {main}
+Request URL: /clientes
+Referer URL: http://localhost:8765/clientes
+
+
+2021-11-26 17:18:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /admin/clientes
+
+
+2021-11-26 17:18:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /admin/adicionar
+
+
+2021-11-26 17:18:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /admin/clientes/adicionar
+
+
+2021-11-26 17:23:11 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(186): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:23:11 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(240): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(138): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', '/home/jose/proj...', 181)
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/config/bootstrap.php(43): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', '/home/jose/proj...', 181, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', '/home/jose/proj...', 181, Array)
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(181): trigger_error('[ParseError] sy...', 256)
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(186): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:23:11 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScr in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:23:14 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(186): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:23:14 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(240): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(138): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', '/home/jose/proj...', 181)
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/config/bootstrap.php(43): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', '/home/jose/proj...', 181, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', '/home/jose/proj...', 181, Array)
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(181): trigger_error('[ParseError] sy...', 256)
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(186): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:23:14 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScr in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:23:15 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(186): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:23:15 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(240): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(138): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', '/home/jose/proj...', 181)
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/config/bootstrap.php(43): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', '/home/jose/proj...', 181, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', '/home/jose/proj...', 181, Array)
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(181): trigger_error('[ParseError] sy...', 256)
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(186): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:23:15 Error: Fatal Error (256): [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php:22)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/jose/projetos/Desafio_JavaScript/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(480): include('/home/jose/proj...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#8 /home/jose/projetos/Desafio_JavaScr in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2021-11-26 17:32:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admin could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Admin',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /admin/clientes
+
+
+2021-11-26 17:32:39 Error: [InvalidArgumentException] Invalid Parameter 1, should be dot separated path or array. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Utility/Hash.php:63)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ServerRequest.php(2182): Cake\Utility\Hash::get(Array, true, false)
+#1 /home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php(21): Cake\Http\ServerRequest->getParam(true)
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Event/EventManager.php(351): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Event/EventManager.php(328): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(112): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Controller/Controller.php(778): Cake\Controller\Controller->dispatchEvent('Controller.befo...')
+#6 /home/jose/projetos/Desafio_JavaScript/src/Controller/PagesController.php(60): Cake\Controller\Controller->render('home')
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\PagesController->display('home')
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+Request URL: /
+
+
+2021-11-26 17:32:43 Error: [InvalidArgumentException] Invalid Parameter 1, should be dot separated path or array. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Utility/Hash.php:63)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ServerRequest.php(2182): Cake\Utility\Hash::get(Array, true, false)
+#1 /home/jose/projetos/Desafio_JavaScript/src/Controller/AppController.php(21): Cake\Http\ServerRequest->getParam(true)
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Event/EventManager.php(351): App\Controller\AppController->beforeRender(Object(Cake\Event\Event))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Event/EventManager.php(328): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(112): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Controller/Controller.php(778): Cake\Controller\Controller->dispatchEvent('Controller.befo...')
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /clientes/adicionar
+
+
+2021-11-26 19:04:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-26 19:08:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-26 19:09:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:44:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:45:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:46:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:49:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:55:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:56:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:57:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:57:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-27 18:59:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(126): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-11-28 01:29:24 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token mismatch. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:235)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(154): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateToken(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Middleware\CsrfProtectionMiddleware->_validateAndUnsetTokenField(Object(Cake\Http\ServerRequest))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /clientes/adicionar.php
+Referer URL: http://localhost:8765/clientes/adicionar
+
+
