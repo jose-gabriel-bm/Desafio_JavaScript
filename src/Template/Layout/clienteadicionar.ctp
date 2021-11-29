@@ -18,29 +18,21 @@ $cakeDescription = 'Adicionar';
     <?= $this->Html->meta('icon') ?>
     
     <?= $this->Html->css('adicionarCliente') ?>
-    <?= $this->Html->css('bootstrap.min') ?>
+    <?= $this->Html->css('bootstrap.min') ?>    
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
-<body>
+<body style="background-color: #F0F8FF;">
     
-    <nav class="navbar navbar-expand navbar-dark bg-primary">
-        <div class="collapse navbar-collapse">
-           <nav>
-               <ul class="navbar-nav navbar-left">
-                   <li>
-                      <a href="https://book.cakephp.org/3/">Documentação</a>
-                   </li>
-                   <li>
-                      <a href="https://api.cakephp.org/3.0/">API</a>
-                   </li>
-               </ul> 
-           </nav>               
-        </div>
-    </nav>
-
+    <nav id="menu">
+    <ul>
+        <li><a href="#">Cliente</a></li>
+        <li><a href="https://book.cakephp.org/3/">Documentação</a></li>
+        <li><a href="https://api.cakephp.org/3.0/">API</a></li>
+    </ul>
+</nav>
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>

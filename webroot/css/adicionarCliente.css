@@ -1,69 +1,158 @@
 /* DESAFIO JAVA SCRIPT */
+
+*{margin: 0;padding: 0;}
+
+html{
+  height: 100%;
+  
+}
 body{
   font-family: "trebuchet MS", tahoma, arial;
-}
-.proximo{
-    margin-bottom:0px;
-    border:none;
-    padding:10px;
-    margin-left: 10px;
-    margin-top: 30px;
-
-    text-transform: uppercase;
-    background:#1668c4;
-    width: 100px;
-    color:#fff;
-    font-weight: bold;
-    float: right;
-  }
-  .anterior{
-    margin-bottom:0px;
-    border:none;
-    padding:10px;
-    margin-left: 0;
-    margin-right: 10px;
-    margin-top: 30px;
-
-    text-transform: uppercase;
-    background:#1668c4;
-    width: 100px;
-    color:#fff;
-    font-weight: bold;
-    float: right;
-  }
-  .enviar:hover {
-    background:#000;
-    cursor:pointer;
-    padding:10px;
-  }
-
-  form {
-    border:1px solid #ccc;
-    padding:40px;
-    margin-top: 5%;
-    margin-left: 30%;
-    margin-right:25%;
-    width: 35%;
-  }
   
-  label {
-    font-size:15px;
-    display:block;
-    width: 300px;
-    margin: 10px;
-    margin-left: 0;
-    margin-top: 10px;
-    font-family: "trebuchet MS", tahoma, arial;
-  }
-  input{
-    padding: 5px;
-    width:300px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
+}
 
-  h2{
-    font-family: "trebuchet MS", tahoma, arial;
-  }
- 
+#formulario{
+  width: 500px;
+  margin: 50px auto;
+  text-align:center;
+  position: relative;
+}
+
+#formulario fieldset{
+  background-color:white;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  padding: 30px 30px;
+  box-sizing: border-box;/*nao deixa o width ficar maior que o objeto pai, no caso o formulario*/
+  box-shadow:0 0 15px 1px rgba(0, 0, 0, 0.4);
+  width: 80%;
+  margin:0 10%;/* centraliza*/
+  position:absolute;
+}
+
+#formulario fieldset:not(:first-of-type){
+  display: none;
+}
+
+#formulario input,#formulario textarea{
+  padding: 10px;
+  border:1px solid rgba(30,144,255, 0.9);
+  border-radius: 4px;
+  outline: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px "trebuchet MS", tahoma, arial;
+  color:#4F4F4F;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+#formulario label{
+  margin-bottom: 0px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  color: rgba(30,144,255, 0.9);
+}
+#formulario h2{
+  color: #4682B4;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 22px "trebuchet MS", tahoma, arial; 
+}
+
+#formulario .acao {
+  background-color: #4682B4;
+  box-sizing: border-box;
+  width: 100px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-top: 5%;
+  float: right;
+}
+
+#formulario .acao:hover {
+  background-color: #ADD8E6;
+  color: #4682B4;
+  cursor: pointer;
+}
+
+#formulario #progress{
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+}
+
+#formulario #progress li{
+  list-style-type: none;
+  color: #4682B4;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  float: left;
+  width: 33.00%;
+  position: relative;
+}
+#formulario #progress li:before{
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  display: block;
+  line-height: 20px;
+  background: #00BFFF;
+  color: white;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin:0 auto 10px auto;
+  
+}
+#formulario #progress li:after{
+  content: '';
+  width: 100%;
+  background:#00BFFF;
+  height: 2px;
+  position: absolute;
+  top: 9px;
+  left: -50%;
+  z-index: -1;
+}
+#formulario #progress li:first-child:after{
+  content: none;
+}
+#formulario #progress li.ativo:before, #formulario #progress li.ativo:after{
+  background:#4682B4;
+}
+
+/* menu horizontal */
+#menu ul {
+  padding:0px;
+  margin:0px;
+  background-color:#4682B4;
+  list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+  padding: 8px 10px;
+  display: inline-block;
+
+  /* visual do link */
+  background-color:#4682B4;
+  color: white;
+  text-decoration: none;
+  border-bottom:3px solid #4682B4;
+  font-size: 22px "trebuchet MS", tahoma, arial;
+}
+
+#menu ul li a:hover {
+  background-color:#D6D6D6;
+  color: #6D6D6D;
+  border-bottom:3px solid #00BFFF;
+}
