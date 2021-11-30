@@ -179,3 +179,24 @@ body{
   margin: 10px auto;
   text-align: center ;
 }
+
+/* butao de adicionar*/
+
+#formulario .addContato {
+  background-color: #008000;
+  border: 2px solid #006400;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 70%;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-top: 5%;
+  float: center;
+}
+#formulario .addContato:hover {
+  background-color: #32CD32;
+  color: white;
+  cursor: pointer;
+}

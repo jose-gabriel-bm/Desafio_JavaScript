@@ -20,51 +20,56 @@ $(function(){
        prev_fs.show(800);
     });
 
-    $('input[name=prev]').click(function(){
+    $('input[name=next1]').click(function(){
         $('.mensagem').html('');
     });
 
     $('input[name=next1]').click(function(){
-        var array = formulario.serializeArray();
         
-        if(array[0].value == '' || array[1].value == '' ){
-            
-            
-                $('.mensagem').html('<div class="erro"><p> E obrigatorio o preechimento do campo Nome e CPF</p></div>');
-            
-            if(array[0].value == '' && array[1].value != ''){
-                $('.mensagem').html('<div class="erro"><p> E obrigatorio o preechimento do campo Nome</p></div>');
-            }
-            if(array[0].value != '' && array[1].value == ''){
-                $('.mensagem').html('<div class="erro"><p> E obrigatorio o preechimento do campo CPF</p></div>');
-            }
+        var nome = document.getElementById('nome').value;
+        var cpf = document.getElementById('cpf').value;
+        var email = document.getElementById('email').value;
+
+        if(nome == '' && cpf == ''){
+            $('.mensagem').html('<div class="erro"><p> Os campos Nome e CPF e obrigatorio</p></div>');
         }
-        else{  
-            $('.mensagem').html('');
-            next($(this));
+
+        if(nome == ''){
+            $('.mensagem').html('<div class="erro"><p> O campo Nome e obrigatorio</p></div>');
+        }
+
+        if(cpf == ''){
+            $('.mensagem').html('<div class="erro"><p> O campo CPF e obrigatorio</p></div>');
+        }
+        
+        if(cpf.length != 11 && cpf != ''){
+            $('.mensagem').html('<div class="erro"><p> O campo CPF deve conter 11 digitos</p></div>');
+        }else{  
+            if(nome != '' && cpf != ''){
+                next($(this));
+                $('.mensagem').html('');
+            }
         }
     });
 
     $('input[name=next2]').click(function(){
-        var array = formulario.serializeArray();
+        var numero = document.getElementById('numero').value;
 
-        if(array[5].value == ''){
-            $('.mensagem').html('<div class="erro"><p> E obrigatorio o preechimento do campo Numero</p></div>');
-            
+        if(numero == ''){
+                $('.mensagem').html('<div class="erro"><p> E obrigatorio o preechimento do campo Numero</p></div>');
+        }
+
+        if(numero != '' && numero.length != 8){
+            $('.mensagem').html('<div class="erro"><p> O campo numero deve conter 8 digitos</p></div>');
         }else{
 
-            if(array[3].value == '' || array[4].value == ''){
-                if(array[3].value == ''){
-                    array[3].value = "55";
-                }
-                if(array[4].value == ''){
-                    array[4].value = "62";
-                }
-            }else{
+            if(numero != ''){
                 $('.mensagem').html('');
                 next($(this));
-                console.log(array);
-            }
-        }
-    })
+                }
+
+            } 
+    });
+
+
 });
