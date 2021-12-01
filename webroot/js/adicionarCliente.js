@@ -70,6 +70,34 @@ $(function(){
 
             } 
     });
-
-
+  
 });
+
+    var contador = 1;
+
+    function adicionarNovoContato(){       
+
+        // criação de um elemento Div.
+        let div = document.createElement("div");
+        let nomeDiv = `contato${contador}`;
+        let atributo = document.createAttribute("class");
+        atributo.value = nomeDiv;
+        div.setAttributeNode(atributo);
+
+        
+        var elementoReferencia = document.getElementById("addContato");
+        var elementoPai = elementoReferencia.parentNode;
+
+        elementoPai.insertBefore(div,elementoReferencia);      
+
+        // adição html no elemento criado.
+        $(`div.${nomeDiv}`).html(`
+        <h2>Contato ${contador}</h2>
+        <input type="text" name="codigo_pais${contador}" id="codigo_pais${contador}" placeholder="Codigo do pais: 55" default="55"/>
+        <input type="text" name="ddd${contador}" id="ddd${contador}" placeholder="DDD: 62" default="62"/>
+        <input type="text" name="numero${contador}" id="numero${contador}" placeholder="Numero: 0000-0000" required />`
+        );
+
+        contador = contador+1;
+    }
+

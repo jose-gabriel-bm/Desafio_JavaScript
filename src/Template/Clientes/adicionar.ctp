@@ -32,9 +32,12 @@
 
             <input type="text" name="numero" id="numero" placeholder="Numero: 0000-0000" required ></input>
             
-            <div class="contato"></div>
-            
-            <input type="button" name="addContato" class="addContato" value="Adicionar +1 contato" /></input>
+            <div id="dvcontato">
+
+            <input type="button" name="addContato" id="addContato" class="addContato" value="Adicionar +1 contato" onclick="adicionarNovoContato()"></input>
+
+            </div>
+
 
             <input type="button" name="next2" class="next acao" value="Proximo" /></input>
             <input type="button" name="prev" class="prev acao" value="Anterior" /></input>
