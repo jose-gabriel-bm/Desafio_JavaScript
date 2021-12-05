@@ -32,7 +32,7 @@ $(function(){
 
         if(nome == '' && cpf == ''){
             $('.mensagem').html('<div class="erro"><p> Os campos Nome e CPF e obrigatorio</p></div>');
-        }
+        }else{
 
         if(nome == ''){
             $('.mensagem').html('<div class="erro"><p> O campo Nome e obrigatorio</p></div>');
@@ -50,6 +50,7 @@ $(function(){
                 $('.mensagem').html('');
             }
         }
+    }
     });
 
     $('input[name=next2]').click(function(){
@@ -84,7 +85,6 @@ $(function(){
         atributo.value = nomeDiv;
         div.setAttributeNode(atributo);
 
-        
         var elementoReferencia = document.getElementById("addContato");
         var elementoPai = elementoReferencia.parentNode;
 
@@ -92,7 +92,9 @@ $(function(){
 
         // adição html no elemento criado.
         $(`div.${nomeDiv}`).html(`
-        <h2>Contato ${contador}</h2>
+        
+        <h2 class="h2novocontato">Contato ${contador}</h2>
+        <input type="button" class="apagarContato" id="apagarContato" value="X" onclick="removerCampoContato()"></input>
         <input type="text" name="codigo_pais${contador}" id="codigo_pais${contador}" placeholder="Codigo do pais: 55" default="55"/>
         <input type="text" name="ddd${contador}" id="ddd${contador}" placeholder="DDD: 62" default="62"/>
         <input type="text" name="numero${contador}" id="numero${contador}" placeholder="Numero: 0000-0000" required />`
@@ -100,4 +102,41 @@ $(function(){
 
         contador = contador+1;
     }
+
+    function removerCampoContato(){
+
+        var button = document.getElementById("apagarContato");
+
+        if(button.parentNode){
+            button.parentNode.remove();
+            contador = 1;
+        }
+    }
+
+    const cep = document.querySelector("#cep");
+
+    cep.addEventListener("blur",(e) =>{
+        let pesquisa = cep.value.replace("-","");
+        const opcoes = {
+            method:"GET",
+            mode:"cors",
+            cache:"default"
+        }
+        fetch(`https://viacep.com.br/ws/${pesquisa}/json/`,opcoes)
+        .then(response => {
+            response.json()
+            .then(data => show(data))
+        }).catch(e => console.log("deu erro" + e.menssage ))
+
+    })
+
+    const show = (result) => {
+        for(const campo in result){
+          if(document.querySelector("#"+campo)){
+              document.querySelector("#"+campo).value = result[campo]
+          }
+        }
+    }
+
+
 

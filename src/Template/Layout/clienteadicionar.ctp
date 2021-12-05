@@ -28,7 +28,16 @@ $cakeDescription = 'Adicionar';
     
     <nav id="menu">
     <ul>
-        <li><a href="#">Cliente</a></li>
+        <li><a href="#">Usuarios</a></li>
+        <li><a href="#">Filmes</a></li>
+        <li id="dropdown">
+            <a>Clientes</a>
+            <div id="dropdown-content">
+                <a href="index">Clientes</a>
+                <a href="adicionar">Adicionar Cliente</a>
+            </div>
+        </li>
+        <li><a href="#">Reservas</a></li>
         <li><a href="https://book.cakephp.org/3/">Documentação</a></li>
         <li><a href="https://api.cakephp.org/3.0/">API</a></li>
     </ul>

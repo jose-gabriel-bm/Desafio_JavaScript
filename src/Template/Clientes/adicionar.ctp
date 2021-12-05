@@ -38,8 +38,7 @@
 
             </div>
 
-
-            <input type="button" name="next2" class="next acao" value="Proximo" /></input>
+            <input type="button" name="next2" class="next acao" value="Proximo" ></input>
             <input type="button" name="prev" class="prev acao" value="Anterior" /></input>
 
         </fieldset>
@@ -56,7 +55,9 @@
 
             <input type="text" id="cep" placeholder="CEP:"></input>
 
-            <input type="text" id="cidade" placeholder="Cidade:"></input>
+            <input type="text" id="localidade" placeholder="Cidade:"></input>
+
+            <input type="text" id="uf" placeholder="Estado:"></input>
            
             <input type="submit" name="enviar" class="enviar acao" value="Salvar" /></input>
             <input type="button" name="prev" class="prev acao" value="Anterior" /></input>

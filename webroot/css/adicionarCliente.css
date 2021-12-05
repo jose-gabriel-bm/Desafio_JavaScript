@@ -142,7 +142,6 @@ body{
 #menu ul li a {
   padding: 8px 10px;
   display: inline-block;
-
   /* visual do link */
   background-color:#4682B4;
   color: white;
@@ -155,6 +154,22 @@ body{
   background-color:#D6D6D6;
   color: #6D6D6D;
   border-bottom:3px solid #00BFFF;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  
+}
+
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+#dropdown:hover #dropdown-content a {
+  display: block;
+  text-align: center;
+  margin-left: 130px;
+  
 }
 
 /* Mensagem de erros e sucesso */
@@ -199,4 +214,25 @@ body{
   background-color: #32CD32;
   color: white;
   cursor: pointer;
+}
+#formulario .apagarContato{
+  box-sizing: border-box;
+  background-color: red;
+  width: 10%;
+  height: 30px;
+  padding: 0;
+  display: inline;
+  float: right;
+  border: none;
+}
+#formulario .apagarContato:hover{
+  background-color:#8B0000; 
+}
+#formulario .h2novocontato{
+  box-sizing: border-box;
+  width: 100%;
+  display: inline;
+  text-align: right;
+  padding: 5px;
+  padding-left: 60px;
 }
