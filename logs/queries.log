@@ -114,3 +114,115 @@
 2021-12-03 18:13:38 Debug: duration=32 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%')
 2021-12-03 18:13:43 Debug: duration=1 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%') ORDER BY Clientes.email asc, Clientes.id Desc LIMIT 10 OFFSET 0
 2021-12-03 18:13:43 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%')
+2021-12-05 13:22:18 Debug: duration=329 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-05 13:22:19 Debug: duration=650 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-05 13:22:19 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-05 13:22:19 Debug: duration=86 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-05 13:22:19 Debug: duration=43 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%') ORDER BY Clientes.email asc, Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 13:22:19 Debug: duration=15 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%')
+2021-12-05 14:21:19 Debug: duration=26 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-05 14:21:19 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-05 14:21:19 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-05 14:21:19 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-05 14:21:19 Debug: duration=20 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 14:21:19 Debug: duration=84 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 14:21:20 Debug: duration=1 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 14:21:20 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 14:21:27 Debug: duration=18 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 14:21:27 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 14:21:32 Debug: duration=42 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 14:21:32 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 14:21:40 Debug: duration=40 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1) ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 14:21:40 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1)
+2021-12-05 18:26:51 Debug: duration=26 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-05 18:26:51 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-05 18:26:51 Debug: duration=12 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-05 18:26:51 Debug: duration=8 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-05 18:26:51 Debug: duration=15 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 18:26:51 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 18:26:53 Debug: duration=2 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 18:26:53 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 18:27:05 Debug: duration=40 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 18:27:05 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 19:53:02 Debug: duration=37 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-05 19:53:02 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-05 19:53:02 Debug: duration=8 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-05 19:53:02 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-05 19:53:02 Debug: duration=5 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 19:53:02 Debug: duration=17 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 21:42:29 Debug: duration=26 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-05 21:42:29 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-05 21:42:29 Debug: duration=24 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-05 21:42:29 Debug: duration=8 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-05 21:42:29 Debug: duration=1 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 21:42:29 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 22:25:11 Debug: duration=27 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-05 22:25:11 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-05 22:25:11 Debug: duration=6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-05 22:25:11 Debug: duration=9 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-05 22:25:11 Debug: duration=1 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 22:25:11 Debug: duration=6 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 22:25:12 Debug: duration=0 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 22:25:12 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 23:44:57 Debug: duration=37 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-05 23:44:57 Debug: duration=3 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-05 23:44:57 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-05 23:44:57 Debug: duration=9 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-05 23:44:57 Debug: duration=1 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 23:44:57 Debug: duration=6 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-05 23:45:04 Debug: duration=1 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%zxcsvdb%' AND cpf like '%%' AND email like '%%') ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 23:45:04 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%zxcsvdb%' AND cpf like '%%' AND email like '%%')
+2021-12-05 23:45:07 Debug: duration=0 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%Jose Gabriel Batista Machado%' AND cpf like '%%' AND email like '%%') ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 23:45:07 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%Jose Gabriel Batista Machado%' AND cpf like '%%' AND email like '%%')
+2021-12-05 23:45:13 Debug: duration=0 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1) ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 23:45:13 Debug: duration=24 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1)
+2021-12-05 23:45:16 Debug: duration=64 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1) ORDER BY Clientes.email asc, Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 23:45:16 Debug: duration=2 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1)
+2021-12-05 23:45:17 Debug: duration=33 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1) ORDER BY Clientes.status asc, Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 23:45:17 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1)
+2021-12-05 23:45:18 Debug: duration=0 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1) ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 23:45:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1)
+2021-12-05 23:45:33 Debug: duration=1 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-05 23:45:33 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes

@@ -1,4 +1,38 @@
+<div>
 
+    <h3>Lista de Clientes</h3>
+
+    <?php echo $this->Html->link(__('Adicionar novo Cliente '), ['controller' => 'clientes', 'action' => 'adicionar']); ?>
+
+<div>
+    <button>Pesquisar</button>
+    <div>
+        <a>
+            <?php
+                echo $this->Form->create(null, ['type' => 'get']);
+        	    echo $this->Form->input(
+                'nome',[
+                    'label' => false, 
+        		        'placeholder' => 'Nome do cliente' ]);
+        	    echo $this->Form->input('email', 
+        		    ['label' => false, 
+        		    'placeholder' => 'Email']);
+                echo $this->Form->input('cpf', 
+        		    ['label' => false, 
+        		    'placeholder' => 'CPF' ]);
+                echo $this->Form->select(
+                    'status', [                                            
+                        'Ativo' => 'Ativo',
+                        'Inativo' => 'Inativo',
+                    ],
+                    ['empty' => 'Selecionar Status'],
+                );
+                echo $this->Form->button('Pesquisar');
+                echo $this->Form->end();
+            ?>     
+        </a>
+    </div>
+</div> 
 <table>
         <thead>
             <tr>

@@ -54,24 +54,48 @@ $(function(){
     });
 
     $('input[name=next2]').click(function(){
-        var numero = document.getElementById('numero').value;
 
-        if(numero == ''){
-                $('.mensagem').html('<div class="erro"><p> E obrigatorio o preechimento do campo Numero</p></div>');
-        }
+        let numero = document.getElementById('numero').value;
+        let ddd = document.getElementById('ddd').value;
+        let codigo_pais = document.getElementById('codigo_pais').value;
 
-        if(numero != '' && numero.length != 8){
-            $('.mensagem').html('<div class="erro"><p> O campo numero deve conter 8 digitos</p></div>');
+        if(numero.length != 8 || ddd.length != 2 || codigo_pais.length != 2){
+            
+            if(numero.length != 8){
+                $('.mensagem').html('<div class="erro"><p>O campo numero deve conter apenas 8 digitos </p></div>');
+            }
+            if(ddd.length != 2 || codigo_pais.length != 2){
+                $('.mensagem').html('<div class="erro"><p>O campo DDD e codigo do pais deve conter apenas 2 digitos </p></div>');
+            }
+            if(ddd == '' || codigo_pais == '' || codigo_pais == ''){
+                $('.mensagem').html('<div class="erro"><p> E obrigatorio o preechimento de todos os campos </p></div>');
+            }
+
         }else{
-
-            if(numero != ''){
-                $('.mensagem').html('');
-                next($(this));
-                }
-
-            } 
+            $('.mensagem').html('');
+            next($(this));
+        } 
     });
-  
+    
+    $('input[type=submit]').click(function(evento){
+
+    var array = formulario.serializeArray();
+
+    $.ajax({
+        type: 'post',
+        url: 'adicionar',
+        data:{cadastrar: 'sim', campos: array},
+        beforeSend: function(){
+            $('.mensagem').html('<div class="erro"><p> Em processamento </p></div>');
+        },
+        success:function(valor){
+            $('.mensagem').html(valor);
+        }
+        
+    });
+    evento.preventDefault();
+});
+    
 });
 
     var contador = 1;

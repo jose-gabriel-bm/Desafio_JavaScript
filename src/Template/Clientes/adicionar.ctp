@@ -1,7 +1,7 @@
 <div class="mensagem"></div>
 
 <div>
-    <form  id="formulario" method="POST" enctype="multipart/form-data" name="formulario">
+    <form method="post" action="/clientes/adicionar" id="formulario" name="formulario">
 
         <ul id="progress">
             <li class="ativo">Dados Pessoais</li>
@@ -45,21 +45,21 @@
         <fieldset>
             <h2>Endereço</h2>
 
-            <input type="text" id="logradouro" placeholder="Logradouro:Rua ,Lote ,Quadra " required></input>
+            <input type="text" name="logradouro" id="logradouro" placeholder="Logradouro:Rua ,Lote ,Quadra " required></input>
 
-            <input type="text" id="numeroCasa" placeholder="Numero:"></input>
+            <input type="text" name="numeroCasa" id="numeroCasa" placeholder="Numero:"></input>
 
-            <input type="text" id="complemento" placeholder="Complemento:"></input>
+            <input type="text" name="complemento" id="complemento" placeholder="Complemento:"></input>
 
-            <input type="text" id="bairro" placeholder="bairro:" required></input>
+            <input type="text" name="bairro" id="bairro" placeholder="bairro:" required></input>
 
-            <input type="text" id="cep" placeholder="CEP:"></input>
+            <input type="text" name="cep" id="cep" placeholder="CEP:"></input>
 
-            <input type="text" id="localidade" placeholder="Cidade:"></input>
+            <input type="text" name="localidade" id="localidade" placeholder="Cidade:"></input>
 
-            <input type="text" id="uf" placeholder="Estado:"></input>
+            <input type="text" name="uf" id="uf" placeholder="Estado:"></input>
            
-            <input type="submit" name="enviar" class="enviar acao" value="Salvar" /></input>
+            <input type="submit" name="enviar" class="enviar acao" value="Salvar"></input>
             <input type="button" name="prev" class="prev acao" value="Anterior" /></input>
 
         </fieldset>

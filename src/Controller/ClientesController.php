@@ -19,8 +19,23 @@ class ClientesController extends AppController
     }
     public function adicionar()
     {
+        sleep(2);
+        if(isset($_POST['cadastrar']) && $_POST['cadastrar'] == 'sim'):
+            $novos_campos = array();
+            $campo_post = $_POST['campos'];
+        
+
+        foreach($campo_post as  $indice => $valor){
+            $novos_campos[$valor['name']] = $valor['value'];
+        }
+        
+
+        echo '<pre>';
+        print_r($novos_campos);
+        endif;
 
     }
+
     public function buscaIndex($busca)
     {
         if (isset($busca)) 
