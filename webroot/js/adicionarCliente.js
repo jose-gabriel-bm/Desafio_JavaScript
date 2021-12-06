@@ -87,10 +87,9 @@ $(function(){
         data: {cadastrar: 'sim', campos: array},
         // dataType: 'json',
         beforeSend:function(){
-            $('.mensagem').html('<div class="erro"><p> Em processamento </p></div>');
         },
         success:function(valor){
-            $('.mensagem').html('<div class="sucesso"><p> Salvo com sucesso</p></div>');
+            console.log("requisição de contatos enviada com sucesso");
         }
         
     });
@@ -122,7 +121,9 @@ $(function(){
         <input type="button" class="apagarContato" id="apagarContato" value="X" onclick="removerCampoContato()"></input>
         <input type="text" name="codigo_pais${contador}" id="codigo_pais${contador}" placeholder="Codigo do pais: 55" default="55"/>
         <input type="text" name="ddd${contador}" id="ddd${contador}" placeholder="DDD: 62" default="62"/>
-        <input type="text" name="numero${contador}" id="numero${contador}" placeholder="Numero: 0000-0000" required />`
+        <input type="text" name="numero${contador}" id="numero${contador}" placeholder="Numero: 0000-0000" required />
+        <input type="hidden" name="principal${contador}" id="principal${contador}" value="1" required ></input>
+        <input type="hidden" name="whatsapp${contador}" id="whatsapp${contador}" value="1" required ></input>`
         );
         contador = contador+1;
 

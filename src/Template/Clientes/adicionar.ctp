@@ -31,7 +31,11 @@
             <input type="text" name="ddd" id="ddd" placeholder="DDD: 62" default="62"></input>
 
             <input type="text" name="numero" id="numero" placeholder="Numero: 0000-0000" required ></input>
-            
+
+            <input type="hidden" name="principal" id="principal" value="1" required ></input>
+
+            <input type="hidden" name="whatsapp" id="whatsapp" value="1" required ></input>
+
             <div id="dvcontato">
 
             <input type="button" name="addContato" id="addContato" class="addContato" value="Adicionar +1 contato" onclick="adicionarNovoContato()"></input>
@@ -47,7 +51,7 @@
 
             <input type="text" name="logradouro" id="logradouro" placeholder="Logradouro:Rua ,Lote ,Quadra " required></input>
 
-            <input type="text" name="numeroCasa" id="numeroCasa" placeholder="Numero:"></input>
+            <input type="text" name="nCasa" id="nCasa" placeholder="Numero:"></input>
 
             <input type="text" name="complemento" id="complemento" placeholder="Complemento:"></input>
 
