@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use PhpParser\Node\Stmt\Echo_;
 
 class ClientesController extends AppController
 {
@@ -19,19 +20,40 @@ class ClientesController extends AppController
     }
     public function adicionar()
     {
-        sleep(2);
+        
         if(isset($_POST['cadastrar']) && $_POST['cadastrar'] == 'sim'):
+
             $novos_campos = array();
             $campo_post = $_POST['campos'];
-        
 
-        foreach($campo_post as  $indice => $valor){
-            $novos_campos[$valor['name']] = $valor['value'];
-        }
-        
+            foreach($campo_post as  $indice => $valor){
+                $novos_campos[$valor['name']] = $valor['value'];
+            }              
 
-        echo '<pre>';
-        print_r($novos_campos);
+            $entityDadosPessoais = $this->Clientes->newEntity([
+                'nome' => $novos_campos['nome'],
+                'cpf' => $novos_campos['cpf'],
+                'email' => $novos_campos['email'],
+                'status' => '1',
+            ]);
+
+            $idCliente = null;
+            if ($this->Clientes->save($entityDadosPessoais)) {
+                $idCliente = $entityDadosPessoais->id;
+            } 
+
+            $this->loadModel('Contatos');
+            $entityDadoscontato = $this->Contatos->newEntity([
+                'id_cliente' => $idCliente,
+                'ddd' => $novos_campos['ddd'],
+                'codigo_pais' => $novos_campos['codigo_pais'],
+                'numero' => $novos_campos['numero'],
+            ]);
+
+            if ($this->Clientes->save($entityDadoscontato)) {
+            } 
+        
+            
         endif;
 
     }

@@ -1,27 +1,40 @@
-<div>
+<div class="principalIndex">
 
     <h3>Lista de Clientes</h3>
 
-    <?php echo $this->Html->link(__('Adicionar novo Cliente '), ['controller' => 'clientes', 'action' => 'adicionar']); ?>
 
-<div>
-    <button>Pesquisar</button>
-    <div>
-        <a>
-            <?php
+    <div class="dropdown">
+        <button class="mainmenubtn" style="margin-bottom: 30px" onclick="openDropDown()">Pesquisar</button>
+        <button id="myButton" class="adicionarCliente" onclick="redirecionarNovoCliente()">Adicionar Cliente</button>
+
+        <div class="dropdown-child">
+            <a>
+                <?php
                 echo $this->Form->create(null, ['type' => 'get']);
-        	    echo $this->Form->input(
-                'nome',[
-                    'label' => false, 
-        		        'placeholder' => 'Nome do cliente' ]);
-        	    echo $this->Form->input('email', 
-        		    ['label' => false, 
-        		    'placeholder' => 'Email']);
-                echo $this->Form->input('cpf', 
-        		    ['label' => false, 
-        		    'placeholder' => 'CPF' ]);
+                echo $this->Form->input(
+                    'nome',
+                    [
+                        'label' => false,
+                        'placeholder' => 'Nome do cliente'
+                    ]
+                );
+                echo $this->Form->input(
+                    'email',
+                    [
+                        'label' => false,
+                        'placeholder' => 'Email'
+                    ]
+                );
+                echo $this->Form->input(
+                    'cpf',
+                    [
+                        'label' => false,
+                        'placeholder' => 'CPF'
+                    ]
+                );
                 echo $this->Form->select(
-                    'status', [                                            
+                    'status',
+                    [
                         'Ativo' => 'Ativo',
                         'Inativo' => 'Inativo',
                     ],
@@ -29,30 +42,31 @@
                 );
                 echo $this->Form->button('Pesquisar');
                 echo $this->Form->end();
-            ?>     
-        </a>
+                ?>
+            </a>
+        </div>
     </div>
-</div> 
-<table>
-        <thead>
+
+    <table>
+        <thead class="thead">
             <tr>
-                <th><?= $this->Paginator->sort('nome', 'Nome')?></th>
-                <th><?= $this->Paginator->sort('cpf', 'CPF')?></th>
-                <th><?= $this->Paginator->sort('email', 'E-mail')?></th>
-                <th><?= $this->Paginator->sort('status', 'Status')?></th>
-                <th><?= $this->Paginator->sort('açoes', 'Ações')?></th>
+                <th><?= $this->Paginator->sort('nome', 'Nome') ?></th>
+                <th><?= $this->Paginator->sort('cpf', 'CPF') ?></th>
+                <th><?= $this->Paginator->sort('email', 'E-mail') ?></th>
+                <th><?= $this->Paginator->sort('status', 'Status') ?></th>
+                <th><?= $this->Paginator->sort('açoes', 'Ações') ?></th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($clientes as $cliente ) : ?>
-               
+            <?php foreach ($clientes as $cliente) : ?>
+
                 <tr>
                     <td><?php echo $cliente->nome; ?></td>
                     <td><?php echo $cliente->cpf; ?></td>
                     <td><?php echo $cliente->email; ?></td>
-                    <td><?php echo $cliente->opcoes_status; ?></td>
+                    <td style="text-align:center;"><?php echo $cliente->opcoes_status; ?></td>
 
-                    <td>
+                    <td style="text-align:center;">
                         <?php echo $this->Html->link(
                             __(' Visualizar '),
                             ['controller' => 'clientes', 'action' => 'view', $cliente->id]
@@ -88,8 +102,4 @@
         </p>
     </div>
 </div>
-<script>
-    function openDropDown() {
-        document.querySelectorAll('.dropdown-child')[0].classList.toggle('show-menu-dw');
-    }
-</script>
+<?= $this->Html->script('indexCliente') ?>

@@ -84,12 +84,13 @@ $(function(){
     $.ajax({
         type: 'post',
         url: 'adicionar',
-        data:{cadastrar: 'sim', campos: array},
-        beforeSend: function(){
+        data: {cadastrar: 'sim', campos: array},
+        // dataType: 'json',
+        beforeSend:function(){
             $('.mensagem').html('<div class="erro"><p> Em processamento </p></div>');
         },
         success:function(valor){
-            $('.mensagem').html(valor);
+            $('.mensagem').html('<div class="sucesso"><p> Salvo com sucesso</p></div>');
         }
         
     });
@@ -123,19 +124,25 @@ $(function(){
         <input type="text" name="ddd${contador}" id="ddd${contador}" placeholder="DDD: 62" default="62"/>
         <input type="text" name="numero${contador}" id="numero${contador}" placeholder="Numero: 0000-0000" required />`
         );
-
         contador = contador+1;
+
+        if(contador == '3'){
+            elementoReferencia.setAttribute("type", "hidden");     
+        }
+
     }
 
     function removerCampoContato(){
 
         var button = document.getElementById("apagarContato");
+        var buttonAdicionar = document.getElementById("addContato");
 
         if(button.parentNode){
             button.parentNode.remove();
-            contador = 1;
+            contador = contador-1;
+            buttonAdicionar.setAttribute("type", "button");
         }
-    }
+    }   
 
     const cep = document.querySelector("#cep");
 

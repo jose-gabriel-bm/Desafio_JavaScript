@@ -236,3 +236,109 @@ body{
   padding: 5px;
   padding-left: 60px;
 }
+
+/* tabelas index */
+
+
+
+table{
+  width: 100%;
+  background-color: white;
+  margin: 50px auto;
+  margin-top: 0px;
+  position: relative; 
+  box-sizing: border-box;
+
+}
+thead{
+  padding: 50px;
+  background-color:#82bae4 ;
+  color: rgb(117, 112, 112);
+  height: 50px;
+  text-align: center;
+  text-decoration:none;
+  border-radius: 15px;
+}
+tbody{
+  text-decoration:none;
+}
+
+.principalIndex{
+  background-color:white;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  box-shadow:0 0 15px 1px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin: 30px auto;
+  margin-top: 25px;
+  
+}
+
+.adicionarCliente{
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  color: white;
+  background-color: #4682B4;
+  border-color: #82bae4;
+  cursor: pointer;
+
+}
+
+.adicionarCliente:hover{
+  background-color: #82bae4;
+  border-color: #4682B4;
+  color:#4682B4;
+}
+/* campos pesquisa */
+
+.mainmenubtn {
+  background-color: #4682B4;
+  border-color: #82bae4;
+  color: white;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  cursor: pointer;
+  padding:5px;
+  margin-top:15px;
+  width: 100px;
+  text-align: left;
+  margin-bottom: 0px;
+
+}
+.mainmenubtn:hover {
+  background-color: #82bae4;
+  border-color: #4682B4;
+  color:#4682B4;
+  margin: 0;
+}
+.dropdown {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0px;
+
+}
+.dropdown-child {
+  margin: 0;
+  display: none;
+  background-color: #ebebeb;
+  width: 1055px;
+}
+.dropdown-child a {
+  margin: 0;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.show-menu-dw {
+  display: block !important;
+}
