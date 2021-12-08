@@ -19,78 +19,79 @@ class ClientesController extends AppController
        
     }
     public function adicionar()
-    {
-        
+    {   
+          
         if(isset($_POST['cadastrar']) && $_POST['cadastrar'] == 'sim'):
 
             $novos_campos = array();
             $campo_post = $_POST['campos'];
 
             foreach($campo_post as $valor){
-                $novos_campos[$valor['name']] = $valor['value'];
+                debug($valor);
             }              
 
-            $entityDadosPessoais = $this->Clientes->newEntity([
-                'nome' => $novos_campos['nome'],
-                'cpf' => $novos_campos['cpf'],
-                'email' => $novos_campos['email'],
-                'status' => '1',
-            ]);
 
-            $idCliente = null;
-            if ($this->Clientes->save($entityDadosPessoais)) {
-                $idCliente = $entityDadosPessoais->id;
-            } 
+        //     $entityDadosPessoais = $this->Clientes->newEntity([
+        //         'nome' => $novos_campos['nome'],
+        //         'cpf' => $novos_campos['cpf'],
+        //         'email' => $novos_campos['email'],
+        //         'status' => '1',
+        //     ]);
 
-            $this->loadModel('Contatos');
+        //     $idCliente = null;
+        //     if ($this->Clientes->save($entityDadosPessoais)) {
+        //         $idCliente = $entityDadosPessoais->id;
+        //     } 
 
-            $contato = [];
-            foreach($novos_campos as $key => $valor){               
+        //     $this->loadModel('Contatos');
 
-                if(strpos($key, 'numero') !== false ){
+        //     $contato = [];
+        //     foreach($novos_campos as $key => $valor){               
 
-                    $subject = $key;
-                    $search = 'numero' ;
-                    $trimmed = str_replace($search, '', $subject);
+        //         if(strpos($key, 'numero') !== false ){
 
-                    array_push($contato,[
-                        'id_cliente' => $idCliente,
-                        'numero' => $valor,
-                        'ddd' => $novos_campos['ddd'.$trimmed],
-                        'codigo_pais' => $novos_campos['codigo_pais'.$trimmed],
-                        'principal' => $novos_campos['principal'.$trimmed],
-                        'whatsapp' => $novos_campos['whatsapp'.$trimmed],
-                    ]);
-                }
+        //             $subject = $key;
+        //             $search = 'numero' ;
+        //             $trimmed = str_replace($search, '', $subject);
+
+        //             array_push($contato,[
+        //                 'id_cliente' => $idCliente,
+        //                 'numero' => $valor,
+        //                 'ddd' => $novos_campos['ddd'.$trimmed],
+        //                 'codigo_pais' => $novos_campos['codigo_pais'.$trimmed],
+        //                 'principal' => $novos_campos['principal'.$trimmed],
+        //                 'whatsapp' => $novos_campos['whatsapp'.$trimmed],
+        //             ]);
+        //         }
                 
-            } 
-            $contatos = TableRegistry::get('Contatos'); 
+        //     } 
+        //     $contatos = TableRegistry::get('Contatos'); 
 
-            foreach($contato as $contat){
-                $contatos->save($contat);
-            }
+        //     foreach($contato as $contat){
+        //         $contatos->save($contat);
+        //     }
 
-            // $this->loadModel('Enderecos');
+        //     // $this->loadModel('Enderecos');
 
-            // $entityEndereco = $this->Clientes->newEntity([
-            //     'nome' => $novos_campos['nome'],
-            //     'cpf' => $novos_campos['cpf'],
-            //     'email' => $novos_campos['email'],
-            //     'status' => $novos_campos['email'],
-            //     'nome' => $novos_campos['nome'],
-            //     'cpf' => $novos_campos['cpf'],
-            //     'email' => $novos_campos['email'],
-            //     'status' => $novos_campos['email'],
-            // ]);
+        //     // $entityEndereco = $this->Clientes->newEntity([
+        //     //     'nome' => $novos_campos['nome'],
+        //     //     'cpf' => $novos_campos['cpf'],
+        //     //     'email' => $novos_campos['email'],
+        //     //     'status' => $novos_campos['email'],
+        //     //     'nome' => $novos_campos['nome'],
+        //     //     'cpf' => $novos_campos['cpf'],
+        //     //     'email' => $novos_campos['email'],
+        //     //     'status' => $novos_campos['email'],
+        //     // ]);
 
 
-            // if ($this->Clientes->save($entityEndereco)) {
-            //     $this->Flash->success('Contatos salvos com sucesso');
-            // }else{
-            //     $this->Flash->error('Nao foi possivel salvar contatos');
-            // }      
+        //     // if ($this->Clientes->save($entityEndereco)) {
+        //     //     $this->Flash->success('Contatos salvos com sucesso');
+        //     // }else{
+        //     //     $this->Flash->error('Nao foi possivel salvar contatos');
+        //     // }      
             
-        endif;
+         endif;
 
     }
 

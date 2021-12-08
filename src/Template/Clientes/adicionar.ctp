@@ -1,4 +1,4 @@
-<div class="mensagem"></div>
+<div class="mensagem" id="mensagem"></div>
 
 <div>
     <form method="post" action="/clientes/adicionar" id="formulario" name="formulario">
@@ -9,7 +9,7 @@
             <li>Endereco</li>
         </ul>
 
-        <fieldset>
+        <fieldset id="dadosPessoais">
 
             <h2>Dados Pessoais</h2>
             
@@ -26,15 +26,11 @@
 
             <h2>Contato</h2>
 
-            <input type="text" name="codigo_pais" id="codigo_pais" placeholder="Codigo do pais: 55" default="55"></input>
+            <input type="text" class="contato" name="codigo_pais" id="codigo_pais" placeholder="Codigo do pais: 55" default="55"></input>
 
-            <input type="text" name="ddd" id="ddd" placeholder="DDD: 62" default="62"></input>
+            <input type="text" class="contato" name="ddd" id="ddd" placeholder="DDD: 62" default="62"></input>
 
-            <input type="text" name="numero" id="numero" placeholder="Numero: 0000-0000" required ></input>
-
-            <input type="hidden" name="principal" id="principal" value="1" required ></input>
-
-            <input type="hidden" name="whatsapp" id="whatsapp" value="1" required ></input>
+            <input type="text" class="contato" name="numero" id="numero" placeholder="Numero: 0000-0000" required ></input>
 
             <div id="dvcontato">
 

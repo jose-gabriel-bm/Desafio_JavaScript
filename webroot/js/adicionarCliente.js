@@ -79,12 +79,56 @@ $(function(){
     
     $('input[type=submit]').click(function(evento){
 
-    var array = formulario.serializeArray();
-
+        var formulario = document.querySelector('#formulario');
+        var contatos = document.getElementsByClassName('contato');
+    
+                let tamanho = contatos.length;
+                tamanho = tamanho / 3;
+    
+                posicaoCodigoPais = 0;
+                posicaoDdd = 1;
+                posicaoNumero = 2; 
+    
+                var array = [];
+                            
+                 for(let i = 0; i < tamanho; i = i+1){
+    
+                    array.push(
+                        {
+                            codigo_pais: contatos[posicaoCodigoPais].value,
+                            ddd: contatos[posicaoDdd].value,
+                            numero: contatos[posicaoNumero].value,
+                        }
+                    );                  
+                            
+                    posicaoCodigoPais = posicaoCodigoPais + 3;
+                    posicaoDdd = posicaoDdd + 3;
+                    posicaoNumero = posicaoNumero + 3; 
+                }
+    
+                let dados = {
+                    dadosPessoais:{
+                        nome:nome.value,
+                        cpf:cpf.value,
+                        email:email.value
+                    },
+                    endereco:{
+                        logradouro:logradouro.value,
+                        nCasa:nCasa.value,
+                        complemento:complemento.value,
+                        bairro:bairro.value,
+                        cep:cep.value,
+                        localidade:localidade.value,
+                        uf:uf.value
+                    },
+                    contatos:{
+                        array
+                    }
+                }
     $.ajax({
         type: 'post',
         url: 'adicionar',
-        data: {cadastrar: 'sim', campos: array},
+        data: {cadastrar: 'sim', campos: dados},
         // dataType: 'json',
         beforeSend:function(){
         },
@@ -104,7 +148,7 @@ $(function(){
 
         // criação de um elemento Div.
         let div = document.createElement("div");
-        let nomeDiv = `contato${contador}`;
+        let nomeDiv = `div${contador}`;
         let atributo = document.createAttribute("class");
         atributo.value = nomeDiv;
         div.setAttributeNode(atributo);
@@ -116,20 +160,14 @@ $(function(){
 
         // adição html no elemento criado.
         $(`div.${nomeDiv}`).html(`
-        
         <h2 class="h2novocontato">Contato ${contador}</h2>
         <input type="button" class="apagarContato" id="apagarContato" value="X" onclick="removerCampoContato()"></input>
-        <input type="text" name="codigo_pais${contador}" id="codigo_pais${contador}" placeholder="Codigo do pais: 55" default="55"/>
-        <input type="text" name="ddd${contador}" id="ddd${contador}" placeholder="DDD: 62" default="62"/>
-        <input type="text" name="numero${contador}" id="numero${contador}" placeholder="Numero: 0000-0000" required />
+        <input type="text" class="contato" name="codigo_pais${contador}" id="codigo_pais${contador}" placeholder="Codigo do pais: 55" default="55"/>
+        <input type="text" class="contato" name="ddd${contador}" id="ddd${contador}" placeholder="DDD: 62" default="62"/>
+        <input type="text" class="contato" name="numero${contador}" id="numero${contador}" placeholder="Numero: 0000-0000" required />
         <input type="hidden" name="principal${contador}" id="principal${contador}" value="1" required ></input>
-        <input type="hidden" name="whatsapp${contador}" id="whatsapp${contador}" value="1" required ></input>`
-        );
+        <input type="hidden" name="whatsapp${contador}" id="whatsapp${contador}" value="1" required ></input>`);
         contador = contador+1;
-
-        if(contador == '3'){
-            elementoReferencia.setAttribute("type", "hidden");     
-        }
 
     }
 
@@ -140,7 +178,6 @@ $(function(){
 
         if(button.parentNode){
             button.parentNode.remove();
-            contador = contador-1;
             buttonAdicionar.setAttribute("type", "button");
         }
     }   
