@@ -239,8 +239,6 @@ body{
 
 /* tabelas index */
 
-
-
 table{
   width: 100%;
   background-color: white;
@@ -342,3 +340,33 @@ tbody{
 .show-menu-dw {
   display: block !important;
 }
+
+/* tela view Cliente */
+
+.view{
+  background-color: white;
+  padding: 20px;
+  width:500px;
+  margin: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  box-shadow:0 0 15px 1px rgba(0, 0, 0, 0.4);
+  
+}
+
+.view h5{
+  color:#4682B4;
+  margin-bottom: 5px;
+
+}
+
+.view h3{
+  color:#4682B4;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+

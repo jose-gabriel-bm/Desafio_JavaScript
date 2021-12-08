@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Controller\AppController;
@@ -8,114 +9,100 @@ class ClientesController extends AppController
 {
     public function index()
     {
-            $this->paginate = [
-                'limit' => 10,
-                'order' => [
-                'Clientes.id' => 'Desc',]
-            ];
-    
-            $busca =  $this->request->query();
-            $this->buscaIndex($busca);
-       
+        $this->paginate = [
+            'limit' => 10,
+            'order' => [
+                'Clientes.id' => 'Desc',
+            ]
+        ];
+
+        $busca =  $this->request->query();
+        $this->buscaIndex($busca);
     }
     public function adicionar()
-    {   
-          
-        if(isset($_POST['cadastrar']) && $_POST['cadastrar'] == 'sim'):
+    {
+        $this->loadModel('Contatos');
+        $this->loadModel('Enderecos');
+        $entityDadosPessoais = $this->Clientes->newEntity();
+        $entityEndereco = $this->Enderecos->newEntity();
 
-            $novos_campos = array();
-            $campo_post = $_POST['campos'];
+        if ($this->request->is('post')) {
 
-            foreach($campo_post as $valor){
-                debug($valor);
-            }              
+            $dados = $this->request->getData();
 
+            $entityDadosPessoais->nome = $dados['dados']['dadosPessoais']['nome'];
+            $entityDadosPessoais->cpf = $dados['dados']['dadosPessoais']['cpf'];
+            $entityDadosPessoais->email = $dados['dados']['dadosPessoais']['email'];
 
-        //     $entityDadosPessoais = $this->Clientes->newEntity([
-        //         'nome' => $novos_campos['nome'],
-        //         'cpf' => $novos_campos['cpf'],
-        //         'email' => $novos_campos['email'],
-        //         'status' => '1',
-        //     ]);
+                $idCliente = null;
+            if ($this->Clientes->save($entityDadosPessoais)) {
+                $idCliente = $entityDadosPessoais->id;
 
-        //     $idCliente = null;
-        //     if ($this->Clientes->save($entityDadosPessoais)) {
-        //         $idCliente = $entityDadosPessoais->id;
-        //     } 
+                $entityEndereco->id_cliente = $idCliente;
+                $entityEndereco->id_cidade = 1;
+                $entityEndereco->logradouro = $dados['dados']['endereco']['logradouro'];
+                $entityEndereco->numero = $dados['dados']['endereco']['nCasa'];
+                $entityEndereco->complemento = $dados['dados']['endereco']['complemento'];
+                $entityEndereco->bairro = $dados['dados']['endereco']['bairro'];
+                $entityEndereco->cep = str_replace('-', '', $dados['dados']['endereco']['cep']);
 
-        //     $this->loadModel('Contatos');
+                if ($this->Enderecos->save($entityEndereco)) {
 
-        //     $contato = [];
-        //     foreach($novos_campos as $key => $valor){               
+                    $entityContatos = [];
+                    foreach ($dados['dados']['contatos']['array'] as $contato) {
+                        array_push($entityContatos, [
+                            'id_cliente' => $idCliente,
+                            'codigo_pais' => $contato['codigo_pais'],
+                            'ddd' => $contato['ddd'],
+                            'numero' => $contato['numero']
+                        ]);
+                    }
 
-        //         if(strpos($key, 'numero') !== false ){
+                    $contatos = TableRegistry::getTableLocator()->get('Contatos');
+                    $entities = $contatos->newEntities($entityContatos);
 
-        //             $subject = $key;
-        //             $search = 'numero' ;
-        //             $trimmed = str_replace($search, '', $subject);
+                    foreach ($entities as $entity) {
+                        $contatos->save($entity);
+                    }
 
-        //             array_push($contato,[
-        //                 'id_cliente' => $idCliente,
-        //                 'numero' => $valor,
-        //                 'ddd' => $novos_campos['ddd'.$trimmed],
-        //                 'codigo_pais' => $novos_campos['codigo_pais'.$trimmed],
-        //                 'principal' => $novos_campos['principal'.$trimmed],
-        //                 'whatsapp' => $novos_campos['whatsapp'.$trimmed],
-        //             ]);
-        //         }
-                
-        //     } 
-        //     $contatos = TableRegistry::get('Contatos'); 
-
-        //     foreach($contato as $contat){
-        //         $contatos->save($contat);
-        //     }
-
-        //     // $this->loadModel('Enderecos');
-
-        //     // $entityEndereco = $this->Clientes->newEntity([
-        //     //     'nome' => $novos_campos['nome'],
-        //     //     'cpf' => $novos_campos['cpf'],
-        //     //     'email' => $novos_campos['email'],
-        //     //     'status' => $novos_campos['email'],
-        //     //     'nome' => $novos_campos['nome'],
-        //     //     'cpf' => $novos_campos['cpf'],
-        //     //     'email' => $novos_campos['email'],
-        //     //     'status' => $novos_campos['email'],
-        //     // ]);
-
-
-        //     // if ($this->Clientes->save($entityEndereco)) {
-        //     //     $this->Flash->success('Contatos salvos com sucesso');
-        //     // }else{
-        //     //     $this->Flash->error('Nao foi possivel salvar contatos');
-        //     // }      
+                } else {
+                    return $this->response->withType("application/json")->withStringBody(json_encode(['resultado' => $entityEndereco->getErrors()]));
+                }
+            } else {
+                return $this->response->withType("application/json")->withStringBody(json_encode(['resultado' => $entityDadosPessoais->getErrors()]));
+            }
             
-         endif;
+        }
+    }
 
+    public function view($id)
+    {
+        $cliente = $this->Clientes->get($id, [
+            'contain' => ['Enderecos', 'Contatos']
+        ]);
+        $this->set(compact('cliente'));
     }
 
     public function buscaIndex($busca)
     {
-        if (isset($busca)) 
-        {
+        if (isset($busca)) {
 
             $clientes = $this->Clientes->find('all');
 
-            if(isset($busca['nome'])){   
-                $clientes = $clientes->where(['nome LIKE' => "%$busca[nome]%"]); 
+            if (isset($busca['nome'])) {
+                $clientes = $clientes->where(['nome LIKE' => "%$busca[nome]%"]);
             }
-            if(isset($busca['cpf'])){  
-                $clientes = $clientes->where(['cpf LIKE' => "%$busca[cpf]%"]);   
+            if (isset($busca['cpf'])) {
+                $clientes = $clientes->where(['cpf LIKE' => "%$busca[cpf]%"]);
             }
-            if(isset($busca['email'])){    
-                $clientes = $clientes->where(['email LIKE' => "%$busca[email]%"]); 
+            if (isset($busca['email'])) {
+                $clientes = $clientes->where(['email LIKE' => "%$busca[email]%"]);
             }
-            if(isset($busca['status'])){
-                if($busca['status'] == 'Ativo'):
+            if (isset($busca['status'])) {
+                if ($busca['status'] == 'Ativo') :
                     $clientes = $clientes->where(['status =' => 1]);
                 endif;
-                if($busca['status'] == 'Inativo'):
+                if ($busca['status'] == 'Inativo') :
                     $clientes = $clientes->where(['status =' => 0]);
                 endif;
             }
@@ -125,5 +112,4 @@ class ClientesController extends AppController
         $clientes = $this->paginate($clientes);
         $this->set(compact('clientes'));
     }
-
 }

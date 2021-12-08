@@ -33,8 +33,8 @@ $cakeDescription = 'Adicionar';
         <li id="dropdown">
             <a>Clientes</a>
             <div id="dropdown-content">
-                <a href="index">Clientes</a>
-                <a href="adicionar">Adicionar Cliente</a>
+                <?php echo $this->Html->link(__('Cliente'),['controller' => 'clientes', 'action' => 'index']);?>
+                <?php echo $this->Html->link(__('Adicionar Cliente'),['controller' => 'clientes', 'action' => 'adicionar']);?>
             </div>
         </li>
         <li><a href="#">Reservas</a></li>

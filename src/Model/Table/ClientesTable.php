@@ -1,18 +1,21 @@
 <?php
-
 namespace App\Model\Table;
 
+use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
-class ClientesTable extends Table {
+class ClientesTable extends Table
+{
 
-    public function initialize(array $config){
-
+    public function initialize(array $config)
+    {
         parent::initialize($config);
-        $this->table('clientes');
-       
+
+        $this->setTable('clientes');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 
@@ -24,30 +27,53 @@ class ClientesTable extends Table {
             'foreignKey' => 'id_cliente'
         ]);
     }
-    public function validationDefault(validator $validator)
+
+    public function validationDefault(Validator $validator)
     {
-
-        //essa validação informa que o id deve ser inteiro e sera criado pelo sistema.
         $validator
-        ->integer('id')
-        ->allowEmpty('id', 'create');
+            ->integer('id')
+            ->allowEmptyString('id', null, 'create');
 
         $validator
-        ->requirePresence('nome','create')
-        ->notEmpty('nome','Inserir um nome');
+            ->scalar('nome')
+            ->maxLength('nome', 100,'O nome possui mais de 100 caracteres')
+            ->requirePresence('nome', 'create')
+            ->notEmptyString('nome');
 
         $validator
-        ->requirePresence('cpf','create')
-        ->notEmpty('cpf','Inserir um cpf');
+            ->scalar('cpf')
+            ->minLength('cpf', 11,'Formato de CPF invalido')
+            ->maxLength('cpf', 11,'Formato de CPF invalido')
+            ->requirePresence('cpf', 'create')
+            ->notEmptyString('cpf')
+            ->add('cpf', 'unique', [
+                'rule' => 'validateUnique', 
+                'provider' => 'table',
+                'message' => 'CPF já cadastrado'
+            ]);
+
+        $validator
+            ->email('email')
+            ->allowEmptyString('email')
+            ->add('email', 'unique', [
+                'rule' => 'validateUnique', 
+                'provider' => 'table',
+                'message' => 'email já cadastrado'
+            ]);
+
+        $validator
+            ->boolean('status')
+            ->notEmptyString('status');
 
         return $validator;
     }
 
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['nome'], 'Nome ja resgistrado'));
-        $rules->add($rules->isUnique(['cpf'], 'cpf ja esta cadastrado'));
-        return $rules;
-    } 
+        $rules->add($rules->isUnique(['email']));
+        $rules->add($rules->isUnique(['cpf']));
 
+        return $rules;
+    }
+    
 }

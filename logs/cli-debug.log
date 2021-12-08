@@ -1,0 +1,229 @@
+2021-12-08 13:40:09 Notice: Deprecated (16384): App\Model\Table\ContatosTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/ContatosTable.php, line: 13
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\ContatosTable::initialize() - APP/Model/Table/ContatosTable.php, line 13
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\ModelTask::getTableObject() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 196
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 113
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:40:09 Notice: Deprecated (16384): App\Model\Table\ClientesTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/ClientesTable.php, line: 14
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\ClientesTable::initialize() - APP/Model/Table/ClientesTable.php, line 14
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\ModelTask::getTableObject() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 196
+Bake\Shell\Task\ModelTask::findHasMany() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 415
+Bake\Shell\Task\ModelTask::getAssociations() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 232
+Bake\Shell\Task\ModelTask::getTableContext() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 131
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 114
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:40:09 Notice: Deprecated (16384): App\Model\Table\EnderecosTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/EnderecosTable.php, line: 12
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\EnderecosTable::initialize() - APP/Model/Table/EnderecosTable.php, line 12
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\ModelTask::getTableObject() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 196
+Bake\Shell\Task\ModelTask::findHasMany() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 415
+Bake\Shell\Task\ModelTask::getAssociations() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 232
+Bake\Shell\Task\ModelTask::getTableContext() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 131
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 114
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:40:17 Notice: Deprecated (16384): App\Model\Table\ContatosTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/ContatosTable.php, line: 13
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\ContatosTable::initialize() - APP/Model/Table/ContatosTable.php, line 13
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\FixtureTask::readSchema() - ROOT/vendor/cakephp/bake/src/Shell/Task/FixtureTask.php, line 216
+Bake\Shell\Task\FixtureTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/FixtureTask.php, line 174
+Bake\Shell\Task\ModelTask::bakeFixture() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 1200
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 117
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:46:16 Notice: Deprecated (16384): App\Model\Table\ClientesTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/ClientesTable.php, line: 14
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\ClientesTable::initialize() - APP/Model/Table/ClientesTable.php, line 14
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\ModelTask::getTableObject() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 196
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 113
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:46:16 Notice: Deprecated (16384): App\Model\Table\EnderecosTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/EnderecosTable.php, line: 12
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\EnderecosTable::initialize() - APP/Model/Table/EnderecosTable.php, line 12
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\ModelTask::getTableObject() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 196
+Bake\Shell\Task\ModelTask::findHasMany() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 415
+Bake\Shell\Task\ModelTask::getAssociations() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 232
+Bake\Shell\Task\ModelTask::getTableContext() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 131
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 114
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:46:21 Notice: Deprecated (16384): App\Model\Table\ClientesTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/ClientesTable.php, line: 14
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\ClientesTable::initialize() - APP/Model/Table/ClientesTable.php, line 14
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\FixtureTask::readSchema() - ROOT/vendor/cakephp/bake/src/Shell/Task/FixtureTask.php, line 216
+Bake\Shell\Task\FixtureTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/FixtureTask.php, line 174
+Bake\Shell\Task\ModelTask::bakeFixture() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 1200
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 117
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:46:21 Notice: Deprecated (16384): App\Model\Table\EnderecosTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/EnderecosTable.php, line: 12
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\EnderecosTable::initialize() - APP/Model/Table/EnderecosTable.php, line 12
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Cake\ORM\Association::getTarget() - CORE/src/ORM/Association.php, line 466
+Bake\Shell\Task\TestTask::_processModel() - ROOT/vendor/cakephp/bake/src/Shell/Task/TestTask.php, line 451
+Bake\Shell\Task\TestTask::generateFixtureList() - ROOT/vendor/cakephp/bake/src/Shell/Task/TestTask.php, line 429
+Bake\Shell\Task\TestTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/TestTask.php, line 238
+Bake\Shell\Task\ModelTask::bakeTest() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 1218
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 118
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:46:38 Notice: Deprecated (16384): App\Model\Table\EnderecosTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/EnderecosTable.php, line: 12
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\EnderecosTable::initialize() - APP/Model/Table/EnderecosTable.php, line 12
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\ModelTask::getTableObject() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 196
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 113
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2021-12-08 13:46:42 Notice: Deprecated (16384): App\Model\Table\EnderecosTable::table() is deprecated. Use setTable()/getTable() instead. - /home/jose/projetos/Desafio_JavaScript/src/Model/Table/EnderecosTable.php, line: 12
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+deprecationWarning - CORE/src/Core/functions.php, line 311
+Cake\ORM\Table::table() - CORE/src/ORM/Table.php, line 388
+App\Model\Table\EnderecosTable::initialize() - APP/Model/Table/EnderecosTable.php, line 12
+Cake\ORM\Table::__construct() - CORE/src/ORM/Table.php, line 299
+Cake\ORM\Locator\TableLocator::_create() - CORE/src/ORM/Locator/TableLocator.php, line 293
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 249
+Bake\Shell\Task\FixtureTask::readSchema() - ROOT/vendor/cakephp/bake/src/Shell/Task/FixtureTask.php, line 216
+Bake\Shell\Task\FixtureTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/FixtureTask.php, line 174
+Bake\Shell\Task\ModelTask::bakeFixture() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 1200
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 117
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 384
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
