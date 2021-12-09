@@ -66,10 +66,20 @@ class ClientesController extends AppController
                     }
 
                 } else {
+                    
+                    // $resposta['erro'] =
                     return $this->response->withType("application/json")->withStringBody(json_encode(['resultado' => $entityEndereco->getErrors()]));
                 }
-            } else {
-                return $this->response->withType("application/json")->withStringBody(json_encode(['resultado' => $entityDadosPessoais->getErrors()]));
+            } else { 
+                $resultados = $entityDadosPessoais->getErrors();
+                foreach($resultados as $key =>$resultado){
+                    $erro['chave'] = $key;
+                    foreach($resultado as $resultad){
+                        $erro['mensagem'] = $resultad;
+                    }
+                }
+                $erro['sucesso'] = false;
+            return $this->response->withType("application/json")->withStringBody(json_encode($erro));
             }
             
         }

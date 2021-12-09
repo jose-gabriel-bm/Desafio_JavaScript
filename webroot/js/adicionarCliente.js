@@ -30,8 +30,8 @@ $(function () {
         var cpf = document.getElementById('cpf').value;
         var email = document.getElementById('email').value;
 
-        if (nome == '' && cpf == '') {
-            $('.mensagem').html('<div class="erro"><p> Os campos Nome e CPF e obrigatorio</p></div>');
+        if (nome == '' && cpf == '' && email == '') {
+            $('.mensagem').html('<div class="erro"><p> E obrigatorio o preenchimento de todos os campos</p></div>');
         } else {
 
             if (nome == '') {
@@ -42,10 +42,14 @@ $(function () {
                 $('.mensagem').html('<div class="erro"><p> O campo CPF e obrigatorio</p></div>');
             }
 
+            if (email == '') {
+                $('.mensagem').html('<div class="erro"><p> O campo email e obrigatorio</p></div>');
+            }
+
             if (cpf.length != 11 && cpf != '') {
                 $('.mensagem').html('<div class="erro"><p> O campo CPF deve conter 11 digitos</p></div>');
             } else {
-                if (nome != '' && cpf != '') {
+                if (nome != '' && cpf != '' && cpf != '') {
                     next($(this));
                     $('.mensagem').html('');
                 }
@@ -86,7 +90,7 @@ $(function () {
         //     $('.mensagem').html('<div class="erro"><p>Formato de Cep invalido,o mesmo deve conter entre 8 a 10 digitos </p></div>');
         // }else if(numero.length > 10){  
         //     $('.mensagem').html('<div class="erro"><p>Campo numero contem mais de 10 caracteres</p></div>');
-        // }else 
+        // }else{ 
             $('.mensagem').html('');
 
             var contatos = document.getElementsByClassName('contato');
@@ -141,12 +145,16 @@ $(function () {
                 // dataType: 'json',
                 beforeSend: function () {
                 },
-                success: function (valor) {
-
+                success: function (valor) { 
+                    if(valor.sucesso === false){
+                        $('.mensagem').html(`<div class="erro"><p> Falha ao salvar: ${valor.chave} ${valor.mensagem} </p></div>`);
+                    }else{
+                        alert('Salvo com sucesso');
+                        window.location.href = 'http://localhost:8765/clientes'
+                    }          
                 }
-
             });
-        
+        // }
         evento.preventDefault();
     });
 
