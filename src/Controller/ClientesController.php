@@ -66,8 +66,6 @@ class ClientesController extends AppController
                     }
 
                 } else {
-                    
-                    // $resposta['erro'] =
                     return $this->response->withType("application/json")->withStringBody(json_encode(['resultado' => $entityEndereco->getErrors()]));
                 }
             } else { 

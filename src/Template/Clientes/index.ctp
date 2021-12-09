@@ -50,9 +50,9 @@
     <table>
         <thead class="thead">
             <tr>
-                <th><?= $this->Paginator->sort('nome', 'Nome') ?></th>
-                <th><?= $this->Paginator->sort('cpf', 'CPF') ?></th>
-                <th><?= $this->Paginator->sort('email', 'E-mail') ?></th>
+                <th style="text-align:left;"><?= $this->Paginator->sort('nome', 'Nome') ?></th>
+                <th style="text-align:left;"><?= $this->Paginator->sort('cpf', 'CPF') ?></th>
+                <th style="text-align:left;"><?= $this->Paginator->sort('email', 'E-mail') ?></th>
                 <th><?= $this->Paginator->sort('status', 'Status') ?></th>
                 <th><?= $this->Paginator->sort('açoes', 'Ações') ?></th>
             </tr>

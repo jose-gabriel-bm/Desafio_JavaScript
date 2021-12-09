@@ -35,9 +35,9 @@
         <tbody>
             <?php foreach ($cliente->contatos as $contato ) : ?>
                 <tr>
-                    <td><?php echo $contato['codigo_pais']; ?></td>
-                    <td><?php echo $contato['ddd']; ?></td>
-                    <td><?php echo $contato['numero']; ?></td>
+                    <td style="text-align:center;"><?php echo $contato['codigo_pais']; ?></td>
+                    <td style="text-align:center;"><?php echo $contato['ddd']; ?></td>
+                    <td style="text-align:center;"><?php echo $contato['numero']; ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
