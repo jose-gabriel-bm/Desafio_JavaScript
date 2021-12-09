@@ -1,58 +1,31 @@
 $(function () {
     var atual_fs, next_fs, prev_fs;
-    var formulario = $('form[name=formulario]');
-
     function next(elem) {
         atual_fs = $(elem).parent();
         next_fs = $(elem).parent().next();
-
         $('#progress li').eq($('fieldset').index(next_fs)).addClass('ativo');
         atual_fs.hide(800);
         next_fs.show(800);
     }
-
     $('.prev').click(function () {
         atual_fs = $(this).parent();
         prev_fs = $(this).parent().prev();
-
         $('#progress li').eq($('fieldset').index(atual_fs)).removeClass('ativo');
         atual_fs.hide(800);
         prev_fs.show(800);
     });
-
     $('input[name=next1]').click(function () {
-        $('.mensagem').html('');
-    });
-
-    $('input[name=next1]').click(function () {
-
-        var nome = document.getElementById('nome').value;
-        var cpf = document.getElementById('cpf').value;
-        var email = document.getElementById('email').value;
-
-        if (nome == '' && cpf == '' && email == '') {
+        let nome = document.getElementById('nome').value;
+        let cpf = document.getElementById('cpf').value;
+        let email = document.getElementById('email').value;
+        if (nome == '' || cpf == '' || email == '') {
             $('.mensagem').html('<div class="erro"><p> E obrigatorio o preenchimento de todos os campos</p></div>');
         } else {
-
-            if (nome == '') {
-                $('.mensagem').html('<div class="erro"><p> O campo Nome e obrigatorio</p></div>');
-            }
-
-            if (cpf == '') {
-                $('.mensagem').html('<div class="erro"><p> O campo CPF e obrigatorio</p></div>');
-            }
-
-            if (email == '') {
-                $('.mensagem').html('<div class="erro"><p> O campo email e obrigatorio</p></div>');
-            }
-
             if (cpf.length != 11 && cpf != '') {
                 $('.mensagem').html('<div class="erro"><p> O campo CPF deve conter 11 digitos</p></div>');
             } else {
-                if (nome != '' && cpf != '' && cpf != '') {
-                    next($(this));
-                    $('.mensagem').html('');
-                }
+                next($(this));
+                $('.mensagem').html('');
             }
         }
     });
@@ -91,69 +64,69 @@ $(function () {
         // }else if(numero.length > 10){  
         //     $('.mensagem').html('<div class="erro"><p>Campo numero contem mais de 10 caracteres</p></div>');
         // }else{ 
-            $('.mensagem').html('');
+        $('.mensagem').html('');
 
-            var contatos = document.getElementsByClassName('contato');
+        var contatos = document.getElementsByClassName('contato');
 
-            let tamanho = contatos.length;
-            tamanho = tamanho / 3;
+        let tamanho = contatos.length;
+        tamanho = tamanho / 3;
 
-            posicaoCodigoPais = 0;
-            posicaoDdd = 1;
-            posicaoNumero = 2;
+        posicaoCodigoPais = 0;
+        posicaoDdd = 1;
+        posicaoNumero = 2;
 
-            var array = [];
+        var array = [];
 
-            for (let i = 0; i < tamanho; i = i + 1) {
+        for (let i = 0; i < tamanho; i = i + 1) {
 
-                array.push(
-                    {
-                        codigo_pais: contatos[posicaoCodigoPais].value,
-                        ddd: contatos[posicaoDdd].value,
-                        numero: contatos[posicaoNumero].value,
-                    }
-                );
+            array.push(
+                {
+                    codigo_pais: contatos[posicaoCodigoPais].value,
+                    ddd: contatos[posicaoDdd].value,
+                    numero: contatos[posicaoNumero].value,
+                }
+            );
 
-                posicaoCodigoPais = posicaoCodigoPais + 3;
-                posicaoDdd = posicaoDdd + 3;
-                posicaoNumero = posicaoNumero + 3;
+            posicaoCodigoPais = posicaoCodigoPais + 3;
+            posicaoDdd = posicaoDdd + 3;
+            posicaoNumero = posicaoNumero + 3;
+        }
+
+        let dados = {
+            dadosPessoais: {
+                nome: nome.value,
+                cpf: cpf.value,
+                email: email.value
+            },
+            endereco: {
+                logradouro: logradouro.value,
+                nCasa: nCasa.value,
+                complemento: complemento.value,
+                bairro: bairro.value,
+                cep: cep.value,
+                localidade: localidade.value,
+                uf: uf.value
+            },
+            contatos: {
+                array
             }
-
-            let dados = {
-                dadosPessoais: {
-                    nome: nome.value,
-                    cpf: cpf.value,
-                    email: email.value
-                },
-                endereco: {
-                    logradouro: logradouro.value,
-                    nCasa: nCasa.value,
-                    complemento: complemento.value,
-                    bairro: bairro.value,
-                    cep: cep.value,
-                    localidade: localidade.value,
-                    uf: uf.value
-                },
-                contatos: {
-                    array
+        }
+        $.ajax({
+            type: 'post',
+            url: 'adicionar',
+            data: { dados },
+            // dataType: 'json',
+            beforeSend: function () {
+            },
+            success: function (valor) {
+                if (valor.sucesso === false) {
+                    $('.mensagem').html(`<div class="erro"><p> Falha ao salvar: ${valor.chave} ${valor.mensagem} </p></div>`);
+                } else {
+                    alert('Salvo com sucesso');
+                    window.location.href = 'http://localhost:8765/clientes'
                 }
             }
-            $.ajax({
-                type: 'post',
-                url: 'adicionar',
-                data: { dados },
-                // dataType: 'json',
-                beforeSend: function () {
-                },
-                success: function (valor) { 
-                    if(valor.sucesso === false){
-                        $('.mensagem').html(`<div class="erro"><p> Falha ao salvar: ${valor.chave} ${valor.mensagem} </p></div>`);
-                    }else{
-                        alert('Salvo com sucesso');
-                        window.location.href = 'http://localhost:8765/clientes'
-                    }          
-                }
-            });
+        });
         // }
         evento.preventDefault();
     });
