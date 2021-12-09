@@ -18,6 +18,7 @@ $(function () {
         let nome = document.getElementById('nome').value;
         let cpf = document.getElementById('cpf').value;
         let email = document.getElementById('email').value;
+
         if (nome == '' || cpf == '' || email == '') {
             $('.mensagem').html('<div class="erro"><p> E obrigatorio o preenchimento de todos os campos</p></div>');
         } else {
@@ -31,7 +32,6 @@ $(function () {
     });
 
     $('input[name=next2]').click(function () {
-
         let numero = document.getElementById('numero').value;
         let ddd = document.getElementById('ddd').value;
         let codigo_pais = document.getElementById('codigo_pais').value;
@@ -50,20 +50,20 @@ $(function () {
 
     $('input[type=submit]').click(function (evento) {
 
-        // let cep = document.getElementById('cep').value;
-        // let cidade = document.getElementById('localidade').value;
-        // let estado = document.getElementById('uf').value;
-        // let logradouro = document.getElementById('logradouro').value;
-        // let bairro = document.getElementById('bairro').value;
-        // let numero = document.getElementById('nCasa').value;
+        let validCep = document.getElementById('cep').value;
+        let validCidade = document.getElementById('localidade').value;
+        let validEstado = document.getElementById('uf').value;
+        let validLogradouro = document.getElementById('logradouro').value;
+        let validBairro = document.getElementById('bairro').value;
+        let validNumero = document.getElementById('nCasa').value;
 
-        // if (cep == '' || cidade == '' || estado == '' || logradouro == '' || bairro == ''|| numero == '') {
-        //     $('.mensagem').html('<div class="erro"><p>E obrigatorio o preenchimento dos 6 primeiros campos </p></div>');
-        // } else if(cep.length < 8 || cep.length > 10){
-        //     $('.mensagem').html('<div class="erro"><p>Formato de Cep invalido,o mesmo deve conter entre 8 a 10 digitos </p></div>');
-        // }else if(numero.length > 10){  
-        //     $('.mensagem').html('<div class="erro"><p>Campo numero contem mais de 10 caracteres</p></div>');
-        // }else{ 
+        if (validCep == '' || validCidade == '' || validEstado == '' || validLogradouro == '' || validBairro == ''|| validNumero == '') {
+            $('.mensagem').html('<div class="erro"><p>E obrigatorio o preenchimento dos 6 primeiros campos </p></div>');
+        } else if(validCep.length < 8 || validCep.length > 10){
+            $('.mensagem').html('<div class="erro"><p>Formato de Cep invalido,o mesmo deve conter entre 8 a 10 digitos </p></div>');
+        }else if(validNumero.length > 10){  
+            $('.mensagem').html('<div class="erro"><p>Campo numero contem mais de 10 caracteres</p></div>');
+        }else{ 
         $('.mensagem').html('');
 
         var contatos = document.getElementsByClassName('contato');
@@ -127,7 +127,7 @@ $(function () {
                 }
             }
         });
-        // }
+        }
         evento.preventDefault();
     });
 

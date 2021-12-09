@@ -38,13 +38,13 @@
         <fieldset>
             <h2>Endereço</h2>
 
-            <input type="text" name="cep" id="cep" placeholder="CEP:"></input>
-            <input type="text" name="localidade" id="localidade" placeholder="Cidade:"></input>
-            <input type="text" name="uf" id="uf" placeholder="Estado:"></input>
-            <input type="text" name="logradouro" id="logradouro" placeholder="Logradouro:Rua ,Lote ,Quadra " required></input>
-            <input type="text" name="bairro" id="bairro" placeholder="bairro:" required></input>
-            <input type="text" name="nCasa" id="nCasa" placeholder="Numero:"></input>
-            <input type="text" name="complemento" id="complemento" placeholder="Complemento:"></input>
+            <input type="text" class="endereco" name="cep" id="cep" placeholder="CEP:"></input>
+            <input type="text" class="endereco" name="localidade" id="localidade" placeholder="Cidade:"></input>
+            <input type="text" class="endereco" name="uf" id="uf" placeholder="Estado:"></input>
+            <input type="text" class="endereco" name="logradouro" id="logradouro" placeholder="Logradouro:Rua ,Lote ,Quadra " required></input>
+            <input type="text" class="endereco" name="bairro" id="bairro" placeholder="bairro:" required></input>
+            <input type="text" class="endereco" name="nCasa" id="nCasa" placeholder="Numero:"></input>
+            <input type="text" class="endereco" name="complemento" id="complemento" placeholder="Complemento:"></input>
 
             <input type="submit" name="enviar" class="enviar acao" value="Salvar"></input>
             <input type="button" name="prev" class="prev acao" value="Anterior" /></input>

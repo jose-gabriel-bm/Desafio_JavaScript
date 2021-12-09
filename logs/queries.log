@@ -4910,3 +4910,76 @@
 2021-12-09 03:16:30 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
 2021-12-09 03:16:30 Debug: duration=0 rows=7 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
 2021-12-09 03:16:30 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-09 03:32:40 Debug: duration=0 rows=0 BEGIN
+2021-12-09 03:32:40 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 03:32:40 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 03:32:40 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 03:32:40 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 03:32:40 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-09 03:32:40 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-09 03:32:40 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-09 03:32:40', '2021-12-09 03:32:40')
+2021-12-09 03:32:40 Debug: duration=0 rows=0 ROLLBACK
+2021-12-09 03:33:52 Debug: duration=0 rows=0 BEGIN
+2021-12-09 03:33:52 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-09 03:33:52 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-09 03:33:52 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-09 03:33:52', '2021-12-09 03:33:52')
+2021-12-09 03:33:52 Debug: duration=0 rows=0 ROLLBACK
+2021-12-09 03:40:00 Debug: duration=0 rows=0 BEGIN
+2021-12-09 03:40:00 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 03:40:00 Debug: duration=3 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 03:40:00 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 03:40:00 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 03:40:00 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-09 03:40:00 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-09 03:40:00 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-09 03:40:00', '2021-12-09 03:40:00')
+2021-12-09 03:40:00 Debug: duration=0 rows=0 ROLLBACK
+2021-12-09 03:49:06 Debug: duration=0 rows=0 BEGIN
+2021-12-09 03:49:06 Debug: duration=4 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 03:49:06 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 03:49:06 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 03:49:06 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 03:49:06 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-09 03:49:06 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-09 03:49:06 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-09 03:49:06', '2021-12-09 03:49:06')
+2021-12-09 03:49:06 Debug: duration=0 rows=0 ROLLBACK
+2021-12-09 03:49:23 Debug: duration=0 rows=0 BEGIN
+2021-12-09 03:49:23 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-09 03:49:23 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-09 03:49:23 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-09 03:49:23', '2021-12-09 03:49:23')
+2021-12-09 03:49:23 Debug: duration=0 rows=0 ROLLBACK
+2021-12-09 03:51:10 Debug: duration=0 rows=0 BEGIN
+2021-12-09 03:51:10 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 03:51:10 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 03:51:10 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 03:51:10 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 03:51:10 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'josegabrielbm@outlook.com' LIMIT 1
+2021-12-09 03:51:10 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05870055130' LIMIT 1
+2021-12-09 03:51:10 Debug: duration=0 rows=0 ROLLBACK
+2021-12-09 03:51:18 Debug: duration=0 rows=0 BEGIN
+2021-12-09 03:51:18 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'josegabrielbm@outlook.com' LIMIT 1
+2021-12-09 03:51:18 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05870055130' LIMIT 1
+2021-12-09 03:51:18 Debug: duration=0 rows=0 ROLLBACK
