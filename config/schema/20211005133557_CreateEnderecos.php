@@ -12,11 +12,6 @@ class CreateEnderecos extends AbstractMigration
         ]);
         $table->addForeignKey('id_cliente','clientes','id');
 
-        // $table->addColumn('id_usuario','integer',[
-        //     'null'=>false,
-        // ]);
-        // $table->addForeignKey('id_usuario','usuarios','id');
-
         $table->addColumn('id_cidade','integer',[
             'null'=>false,
         ]);

@@ -25,15 +25,7 @@ class CreateContatos extends AbstractMigration
         $table->addColumn('numero','string',[
             'limit'=>9,
             'null'=>false,
-        ]);
-        $table->addColumn('principal','boolean',[
-            'default'=>true,
-            'null'=>false,
-        ]);
-        $table->addColumn('whatsapp','boolean',[
-            'null'=>false,
-        ]);
-        
+        ]);       
         
         $table->create();
     }

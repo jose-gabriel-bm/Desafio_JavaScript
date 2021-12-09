@@ -7,11 +7,6 @@ class CreateClientes extends AbstractMigration
     {
         $table = $this->table('clientes');
 
-        // $table->addColumn('id_usuario','integer',[
-        //     'null'=>false,
-        // ]);
-        // $table->addForeignKey('id_usuario','usuarios','id');
-
         $table->addColumn('nome','string',[
             'limit'=>100,
             'null'=>false,

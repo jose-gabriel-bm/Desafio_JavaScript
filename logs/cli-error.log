@@ -50,3 +50,76 @@ Stack Trace:
 #21 {main}
 
 
+2021-12-09 04:13:40 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [1049] Unknown database 'desafio_javascript' in /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 82
+Stack Trace:
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(116): Phinx\Db\Adapter\PdoAdapter->createPdoConnection()
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(148): Phinx\Db\Adapter\MysqlAdapter->connect()
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(496): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/CakeAdapter.php(56): Phinx\Db\Adapter\AdapterWrapper->getConnection()
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct()
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(63): Migrations\Command\Migrate->bootstrap()
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute()
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Command/Migrate.php(66): Migrations\Command\Migrate->parentExecute()
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Command/Command.php(299): Migrations\Command\Migrate->execute()
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(978): Symfony\Component\Console\Command\Command->run()
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(295): Symfony\Component\Console\Application->doRunCommand()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(167): Symfony\Component\Console\Application->doRun()
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run()
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/Shell.php(531): Migrations\Shell\MigrationsShell->main()
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(169): Cake\Console\Shell->runCommand()
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand()
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell()
+#17 /home/jose/projetos/Desafio_JavaScript/bin/cake.php(12): Cake\Console\CommandRunner->run()
+#18 {main}
+
+
+Caused by: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'desafio_javascript' in /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 79
+Stack Trace:
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(79): PDO->__construct()
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(116): Phinx\Db\Adapter\PdoAdapter->createPdoConnection()
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(148): Phinx\Db\Adapter\MysqlAdapter->connect()
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(496): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/CakeAdapter.php(56): Phinx\Db\Adapter\AdapterWrapper->getConnection()
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct()
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(63): Migrations\Command\Migrate->bootstrap()
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute()
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Command/Migrate.php(66): Migrations\Command\Migrate->parentExecute()
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Command/Command.php(299): Migrations\Command\Migrate->execute()
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(978): Symfony\Component\Console\Command\Command->run()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(295): Symfony\Component\Console\Application->doRunCommand()
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(167): Symfony\Component\Console\Application->doRun()
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run()
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/Shell.php(531): Migrations\Shell\MigrationsShell->main()
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(169): Cake\Console\Shell->runCommand()
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand()
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell()
+#18 /home/jose/projetos/Desafio_JavaScript/bin/cake.php(12): Cake\Console\CommandRunner->run()
+#19 {main}
+
+
+2021-12-09 04:16:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'estados.PRIMARY' in /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 184
+Stack Trace:
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(184): PDO->exec()
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(152): Phinx\Db\Adapter\PdoAdapter->execute()
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(152): Phinx\Db\Adapter\AdapterWrapper->execute()
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Seed/AbstractSeed.php(151): Phinx\Db\Adapter\AdapterWrapper->execute()
+#4 /home/jose/projetos/Desafio_JavaScript/config/Seeds/EstadosSeed.php(9): Phinx\Seed\AbstractSeed->execute()
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(139): EstadosSeed->run()
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(405): Phinx\Migration\Manager\Environment->executeSeed()
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(547): Phinx\Migration\Manager->executeSeed()
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/robmorgan/phinx/src/Phinx/Console/Command/SeedRun.php(103): Phinx\Migration\Manager->seed()
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute()
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Command/Seed.php(71): Migrations\Command\Seed->parentExecute()
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Command/Command.php(299): Migrations\Command\Seed->execute()
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(978): Symfony\Component\Console\Command\Command->run()
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(295): Symfony\Component\Console\Application->doRunCommand()
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/symfony/console/Application.php(167): Symfony\Component\Console\Application->doRun()
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run()
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/Shell.php(531): Migrations\Shell\MigrationsShell->main()
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(169): Cake\Console\Shell->runCommand()
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/CommandRunner.php(384): Migrations\Shell\MigrationsShell->runCommand()
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell()
+#20 /home/jose/projetos/Desafio_JavaScript/bin/cake.php(12): Cake\Console\CommandRunner->run()
+#21 {main}
+
+

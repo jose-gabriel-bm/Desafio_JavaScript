@@ -5135,3 +5135,206 @@
 2021-12-09 04:04:22 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
 2021-12-09 04:04:25 Debug: duration=0 rows=7 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
 2021-12-09 04:04:25 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-09 04:06:49 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 04:06:49 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 04:06:49 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 04:06:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 04:06:49 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-09 04:06:49 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-09 04:06:49 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-09 04:06:49 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-09 04:06:49 Debug: duration=4 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-09 04:06:49 Debug: duration=2 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-09 04:06:49 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-09 04:06:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-09 04:06:49 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 33 LIMIT 1
+2021-12-09 04:06:49 Debug: duration=1 rows=0 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (33)
+2021-12-09 04:06:49 Debug: duration=1 rows=0 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (33)
+2021-12-09 04:06:58 Debug: duration=0 rows=7 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-09 04:06:58 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-09 04:14:42 Debug: duration=1 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "desafio_javascript"
+2021-12-09 04:15:40 Debug: duration=1 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "desafio_javascript"
+2021-12-09 04:15:42 Debug: duration=1 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "desafio_javascript"
+2021-12-09 04:15:44 Debug: duration=1 rows=3 SHOW TABLES FROM `desafio_javascript`
+2021-12-09 04:15:44 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 04:15:44 Debug: duration=250 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 04:15:44 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 04:15:44 Debug: duration=109 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 04:15:44 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-09 04:15:44 Debug: duration=108 rows=1 SHOW INDEXES FROM `estados`
+2021-12-09 04:15:44 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-09 04:15:44 Debug: duration=53 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-09 04:16:00 Debug: duration=1 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "desafio_javascript"
+2021-12-09 04:16:04 Debug: duration=1 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "desafio_javascript"
+2021-12-09 04:16:06 Debug: duration=1 rows=5 SHOW TABLES FROM `desafio_javascript`
+2021-12-09 04:16:06 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-09 04:16:07 Debug: duration=177 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-09 04:16:07 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-09 04:16:07 Debug: duration=87 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-09 04:16:07 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 04:16:07 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 04:16:07 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 04:16:07 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 04:16:07 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `contatos`
+2021-12-09 04:16:07 Debug: duration=125 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-09 04:16:07 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-09 04:16:07 Debug: duration=87 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-09 04:16:07 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-09 04:16:07 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-09 04:16:07 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-09 04:16:07 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-09 04:16:15 Debug: duration=1 rows=1 SELECT DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME
+                FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = "desafio_javascript"
+2021-12-09 04:16:19 Debug: duration=1 rows=6 SHOW TABLES FROM `desafio_javascript`
+2021-12-09 04:16:19 Debug: duration=4 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-09 04:16:19 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-09 04:16:19 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-09 04:16:19 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-09 04:16:19 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 04:16:19 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 04:16:19 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 04:16:19 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 04:16:19 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `contatos`
+2021-12-09 04:16:19 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-09 04:16:19 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-09 04:16:19 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-09 04:16:19 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-09 04:16:19 Debug: duration=187 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-09 04:16:19 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-09 04:16:19 Debug: duration=42 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-09 04:16:19 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-09 04:16:19 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-09 04:16:19 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-09 04:16:19 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-09 04:17:24 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-09 04:17:24 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-09 04:17:24 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-09 04:17:24 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-09 04:17:24 Debug: duration=1 rows=0 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-09 04:17:24 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-09 04:19:14 Debug: duration=0 rows=0 BEGIN
+2021-12-09 04:19:15 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'josegabrielbm@outlook.com' LIMIT 1
+2021-12-09 04:19:15 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05870055130' LIMIT 1
+2021-12-09 04:19:15 Debug: duration=0 rows=1 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES ('Jose Gabriel Batista Machado', '05870055130', 'josegabrielbm@outlook.com', '2021-12-09 04:19:15', '2021-12-09 04:19:15')
+2021-12-09 04:19:15 Debug: duration=0 rows=0 COMMIT
+2021-12-09 04:19:15 Debug: duration=0 rows=0 BEGIN
+2021-12-09 04:19:15 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-09 04:19:15 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-09 04:19:15 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-09 04:19:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-09 04:19:15 Debug: duration=1 rows=1 INSERT INTO enderecos (id_cliente, id_cidade, logradouro, numero, complemento, bairro, cep) VALUES (1, 1, 'Zona Rural', '0', '', 'Regiao Cara', '75240000')
+2021-12-09 04:19:15 Debug: duration=0 rows=0 COMMIT
+2021-12-09 04:19:15 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `contatos`
+2021-12-09 04:19:15 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-09 04:19:15 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-09 04:19:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-09 04:19:15 Debug: duration=0 rows=0 BEGIN
+2021-12-09 04:19:15 Debug: duration=0 rows=0 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (1, '55', '62', '993410844')
+2021-12-09 04:19:15 Debug: duration=0 rows=0 ROLLBACK
