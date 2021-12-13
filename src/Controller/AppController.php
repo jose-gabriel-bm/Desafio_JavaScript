@@ -32,6 +32,9 @@ class AppController extends Controller
             if($action == 'view'){
                 $this->viewBuilder()->setLayout('clienteadicionar');
             }
+            if($action == 'edit'){
+                $this->viewBuilder()->setLayout('clienteadicionar');
+            }
         }
     }
 }

@@ -20,10 +20,13 @@ $(function () {
         let email = document.getElementById('email').value;
 
         if (nome == '' || cpf == '' || email == '') {
-            $('.mensagem').html('<div class="erro"><p> E obrigatorio o preenchimento de todos os campos</p></div>');
+            let mensageErro = 'E obrigatorio o preenchimento de todos os campos'
+            adicionarMensagemErro(mensageErro);
+
         } else {
             if (cpf.length != 11 && cpf != '') {
-                $('.mensagem').html('<div class="erro"><p> O campo CPF deve conter 11 digitos</p></div>');
+                let mensageErro = 'O campo CPF deve conter 11 digitos'
+                adicionarMensagemErro(mensageErro);
             } else {
                 next($(this));
                 $('.mensagem').html('');
@@ -37,11 +40,14 @@ $(function () {
         let codigo_pais = document.getElementById('codigo_pais').value;
 
         if (numero.length < 8 || numero.length > 9) {
-            $('.mensagem').html('<div class="erro"><p>O campo numero deve conter de 8 a 9 digitos </p></div>');
+            let mensageErro = 'O campo numero deve conter de 8 a 9 digitos'
+            adicionarMensagemErro(mensageErro);
         } else if (ddd.length != 2 || codigo_pais.length != 2) {
-            $('.mensagem').html('<div class="erro"><p>O campo DDD e codigo do pais deve conter apenas 2 digitos </p></div>');
+            let mensageErro = 'O campo DDD e codigo do pais deve conter apenas 2 digitos'
+            adicionarMensagemErro(mensageErro);
         } else if (ddd == '' || codigo_pais == '' || codigo_pais == '') {
-            $('.mensagem').html('<div class="erro"><p> E obrigatorio o preechimento de todos os campos </p></div>');
+            let mensageErro = ' E obrigatorio o preechimento de todos os campos'
+            adicionarMensagemErro(mensageErro);
         } else {
             $('.mensagem').html('');
             next($(this));
@@ -58,11 +64,14 @@ $(function () {
         let validNumero = document.getElementById('nCasa').value;
 
         if (validCep == '' || validCidade == '' || validEstado == '' || validLogradouro == '' || validBairro == ''|| validNumero == '') {
-            $('.mensagem').html('<div class="erro"><p>E obrigatorio o preenchimento dos 6 primeiros campos </p></div>');
+            let mensageErro = ' E obrigatorio o preenchimento dos 6 primeiros campos'
+            adicionarMensagemErro(mensageErro);
         } else if(validCep.length < 8 || validCep.length > 10){
-            $('.mensagem').html('<div class="erro"><p>Formato de Cep invalido,o mesmo deve conter entre 8 a 10 digitos </p></div>');
+            let mensageErro = ' Formato de Cep invalido,o mesmo deve conter entre 8 a 10 digitos'
+            adicionarMensagemErro(mensageErro);
         }else if(validNumero.length > 10){  
-            $('.mensagem').html('<div class="erro"><p>Campo numero contem mais de 10 caracteres</p></div>');
+            let mensageErro = ' Campo numero contem mais de 10 caracteres'
+            adicionarMensagemErro(mensageErro);
         }else{ 
         $('.mensagem').html('');
 
@@ -111,6 +120,11 @@ $(function () {
                 array
             }
         }
+        enviarRequisicao(dados);
+        }
+        evento.preventDefault();
+    });
+    function enviarRequisicao(dados){
         $.ajax({
             type: 'post',
             url: 'adicionar',
@@ -127,9 +141,22 @@ $(function () {
                 }
             }
         });
-        }
-        evento.preventDefault();
-    });
+    }
+    function adicionarMensagemErro(mensageErro){
+
+        let elementoRef = document.getElementById("mensagem");
+        elementoRef.innerText = "";
+        
+        let div = document.createElement("div");
+        let nomeDiv = `erro`;
+        let atributo = document.createAttribute("class");
+        atributo.value = nomeDiv;
+        div.setAttributeNode(atributo);
+        console.log(div);
+        let texto = document.createTextNode(mensageErro)
+        div.appendChild(texto);
+        elementoRef.appendChild(div);
+    }
 
 });
 

@@ -86,9 +86,19 @@ class ClientesController extends AppController
     public function view($id)
     {
         $cliente = $this->Clientes->get($id, [
-            'contain' => ['Enderecos', 'Contatos']
+            'contain' => ['Enderecos', 'Contatos','Cidades']
         ]);
         $this->set(compact('cliente'));
+    }
+    public function edit($id)
+    {
+
+        $cliente = $this->Clientes->get($id, [
+            'contain' => ['Enderecos', 'Contatos']
+        ]);
+
+        $this->set(compact('cliente'));
+
     }
 
     public function buscaIndex($busca)
