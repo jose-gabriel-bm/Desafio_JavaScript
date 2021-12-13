@@ -90,14 +90,61 @@ class ClientesController extends AppController
         ]);
         $this->set(compact('cliente'));
     }
-    public function edit($id)
+    public function edit($id = null)
     {
 
+        $this->loadModel('Enderecos');
+        $this->loadModel('Contatos');
+        
         $cliente = $this->Clientes->get($id, [
-            'contain' => ['Enderecos', 'Contatos']
+            'contain' => ['Enderecos', 'Contatos'],
         ]);
+        $id_endereco = 0;
+        foreach ($cliente->enderecos as $endereco) {
+            $id_endereco = $endereco->id;
+        }
 
-        $this->set(compact('cliente'));
+        $endereco = $this->Enderecos->get($id_endereco);
+
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $dados = $this->request->getData();
+
+            // debug($dados);
+
+            $cliente->set([
+                'nome' => $dados['dados']['dadosPessoais']['nome'],
+                'cpf' => $dados['dados']['dadosPessoais']['cpf'],
+                'email' => $dados['dados']['dadosPessoais']['email']
+            ]);
+
+            debug($cliente);
+        //   if ($this->Clientes->save($cliente)) {
+
+        //   }
+        //         $endereco->set([
+        //             'cep' => str_replace("-", "", $dados['dados']['endereco']['cep']),
+        //             'logadouro' => $dados['dados']['endereco']['logradouro'],
+        //             'numero' => $dados['dados']['endereco']['numero'],
+        //             'bairro' => $dados['dados']['endereco']['bairro'],
+        //             'complemento' => $dados['dados']['endereco']['complemento']
+
+        //         ]);
+
+        //         if ($this->Enderecos->save($endereco)) {
+
+        //             // foreach ($cliente->contatos as $contato) {
+        //             //     $contato->set([
+        //             //         'telefone' => $dados['dados']['contato']['telefone']
+        //             //     ]);
+        //             // }
+        //             // var_dump($contato);
+
+        //         };
+         
+
+        }
+
+        $this->set('cliente', $cliente);
 
     }
 

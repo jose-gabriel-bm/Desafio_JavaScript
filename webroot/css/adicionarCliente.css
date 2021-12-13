@@ -446,3 +446,18 @@ ul.pagination .disabled:hover a {
   color:#f4f6f8;
 }
 
+#edit .apagarContato{
+  box-sizing: border-box;
+  background-color: red;
+  width: 10%;
+  height: 30px;
+  padding: 0;
+  display: inline;
+  float: right;
+  border: none;
+}
+#edit .apagarContato:hover{
+  background-color:#8B0000; 
+  color: white;
+}
+
