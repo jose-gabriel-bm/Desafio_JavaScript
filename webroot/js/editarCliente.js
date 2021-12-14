@@ -151,6 +151,10 @@ function adicionarMensagemSucesso(mensageSucesso) {
     elementoRef.appendChild(div);
 }
 
+function redirecionarTelaIndex(){
+    location.href = `http://localhost:8765/clientes/index`
+}
+
 $("form").on("click", ".apagarContato", function () {
     var button_id = $(this).attr("id");
 

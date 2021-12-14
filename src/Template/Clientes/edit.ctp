@@ -53,7 +53,8 @@
             <input type="text" value="<?php echo $cliente['enderecos']['0']['numero']?>" id="nCasa" placeholder="Numero:"></input>
             <input type="text" value="<?php echo $cliente['enderecos']['0']['complemento']?>" id="complemento" placeholder="Complemento:"></input>
 
-            <input type="button" id="btnenviar" class="enviar acao" value="Salvar" onclick="salvarDados()"></input>
+            <button type="button" class="btnRedirect" id="btnVoltar" onclick="redirecionarTelaIndex()">Voltar</button>
+            <button class="btnRedirect" id="btnEnviar"  onclick="salvarDados()">Salvar</button>
 
         </fieldset>
     </form>

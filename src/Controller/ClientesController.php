@@ -198,4 +198,23 @@ class ClientesController extends AppController
         $clientes = $this->paginate($clientes);
         $this->set(compact('clientes'));
     }
+    public function mudarStatus($id = null)
+    {
+        if ($this->request->allowMethod(['patch', 'post', 'put'])) {
+
+        $cliente = $this->Clientes->get($id);
+
+        if($cliente['status'] == true){
+            $cliente->set([
+                'status' => 0
+            ]);
+        }else{
+            $cliente->set([
+                'status' => 1
+            ]);
+        }
+        $this->Clientes->save($cliente);
+        return $this->redirect(['action' => 'index']);
+        }
+    }
 }
