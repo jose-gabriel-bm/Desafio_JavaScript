@@ -25,8 +25,8 @@
 
         </fieldset>
         <fieldset>
-
             <h3>Contato</h3>
+
             <?php $contador = 1;?>
             <?php foreach ($cliente->contatos as $contato ) : ?>
             <div id ='contato<?= $contador ?>'>
@@ -38,6 +38,10 @@
             </div>
             <?php $contador = $contador + 1;?>
             <?php endforeach; ?>
+
+            <div id="dvcontato">
+                <input type="button" name="addContato" id="addContato" class="addContato" value="Adicionar +1 contato" onclick="adicionarNovoContato()"></input>
+            </div>
 
         </fieldset>
         <fieldset>

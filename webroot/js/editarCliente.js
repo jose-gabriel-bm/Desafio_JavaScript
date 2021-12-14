@@ -1,6 +1,7 @@
 function salvarDados(){
 
     var contatos = document.getElementsByClassName('contatoEdit');
+    let status = document.getElementById('status').value
 
         let tamanho = contatos.length;
         tamanho = tamanho / 3;
@@ -31,6 +32,7 @@ function salvarDados(){
             nome: nome.value,
             cpf: cpf.value,
             email: email.value,
+            status: status
         },
         endereco: {
             logradouro: logradouro.value,
@@ -42,11 +44,59 @@ function salvarDados(){
         contatos: {
             array
         }
-
     }
 
-     enviarDados(dados);
+    validarCampos(dados)   
     
+}
+function validarCampos(dados){
+
+    if(dados['dadosPessoais']['nome'] == '' || dados['dadosPessoais']['email'] == ''|| dados['dadosPessoais']['cpf'] == ''){
+        let mensageErro = ' E obrigatorio o preechimento de todos os campos de Dados pessoais';
+        adicionarMensagemErro(mensageErro)
+    }else if(dados['endereco']['logradouro'] == '' || dados['endereco']['numero'] == ''|| dados['endereco']['bairro'] == ''|| dados['endereco']['cep'] == ''){
+        let mensageErro = ' E obrigatorio o preechimento dos 4 primeiros campos de Endereço';
+        adicionarMensagemErro(mensageErro)
+    }else if(dados['dadosPessoais']['cpf'] .length != 11 && dados['dadosPessoais']['cpf']  != ''){
+        let mensageErro = 'O campo CPF deve conter 11 digitos'
+        adicionarMensagemErro(mensageErro);
+    }else if(dados['endereco']['cep'].length < 8 || dados['endereco']['cep'].length > 10){
+        let mensageErro = ' Formato de Cep invalido,o mesmo deve conter entre 8 a 10 digitos'
+        adicionarMensagemErro(mensageErro);
+    }else if(dados['endereco']['numero'].length > 10){
+        let mensageErro = ' Campo numero contem mais de 10 caracteres'
+        adicionarMensagemErro(mensageErro);
+    }else{
+        $('.mensagem').html('');
+        enviarDados(dados);
+    }
+   
+}
+var contador = 9;
+function adicionarNovoContato(){
+
+     // criação de um elemento Div.
+     let div = document.createElement("div");
+     let nomeDiv = `div${contador}`;
+     let atributo = document.createAttribute("class");
+     atributo.value = nomeDiv;
+     div.setAttributeNode(atributo);
+ 
+     var elementoReferencia = document.getElementById("addContato");
+     var elementoPai = elementoReferencia.parentNode;
+ 
+     elementoPai.insertBefore(div, elementoReferencia);
+ 
+     // adição html no elemento criado.
+     $(`div.${nomeDiv}`).html(`
+        <div id ="contato${contador}">
+        <input type="button" class="apagarContato" id ="contato${contador}" value="X" ></input>
+        <input type="text" class="contatoEdit" name="codigo_pais${contador}" id="codigo_pais${contador}" placeholder="Codigo do pais: 55" default="55"/>
+        <input type="text" class="contatoEdit" name="ddd${contador}" id="ddd${contador}" placeholder="DDD: 62" default="62"/>
+        <input type="text" class="contatoEdit" name="numero${contador}" id="numero${contador}" placeholder="Numero: 0000-0000" required />
+        </div>
+         `);
+     contador = contador + 1;
 }
 function enviarDados(dados) {
     $.ajax({
@@ -57,12 +107,13 @@ function enviarDados(dados) {
         beforeSend: function () {
         },
         success: function (valor) {
-            // if (valor.sucesso === false) {
-            //     $('.mensagem').html(`<div class="erro"><p> Falha ao salvar: ${valor.chave} ${valor.mensagem} </p></div>`);
-            // } else {
-            //     alert('Salvo com sucesso');
-            //     window.location.href = 'http://localhost:8765/clientes'
-            // }
+            if (valor.sucesso === false) {
+                alert(`Falha ao salvar: ${valor.chave} ${valor.mensagem} `);
+                $('.mensagem').html(`<div class="erro"><p> Falha ao salvar: ${valor.chave} ${valor.mensagem} </p></div>`);
+            } else {
+                alert('Salvo com sucesso');
+                window.location.href = 'http://localhost:8765/clientes'
+            }
         }
     });
 }

@@ -24340,3 +24340,1920 @@ Exception Attributes: array (
 Request URL: /css/bootstrap.min.css.map
 
 
+2021-12-13 22:19:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/base.css
+Referer URL: http://localhost:8765/
+
+
+2021-12-13 22:19:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/style.css
+Referer URL: http://localhost:8765/
+
+
+2021-12-13 22:19:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/home.css
+Referer URL: http://localhost:8765/
+
+
+2021-12-13 22:20:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:02:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:05:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:08:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:08:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:10:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:11:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:11:53 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=954 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:11:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:954) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:11:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:954) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:11:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:954) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:14:06 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:14:06 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:14:06 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:14:06 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:16:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:16:19 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=954 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:16:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:954) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:16:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:954) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:16:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:954) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes/edit/9
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-13 23:17:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:48:12 Error: [ParseError] syntax error, unexpected '}' (/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php:137)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/composer/ClassLoader.php(346): Composer\Autoload\includeFile('/home/jose/proj...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Cli...', 'App')
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(93): Cake\Core\App::className('Clientes', 'Controller', 'Controller')
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#21 {main}
+Request URL: /clientes/edit/9
+Referer URL: http://localhost:8765/clientes
+
+
+2021-12-13 23:48:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:50:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-13 23:54:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 00:09:16 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 137]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 137
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:09:16 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:09:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:09:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:09:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:09:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 00:09:24 Error: [Cake\Database\Exception] Impossible to generate condition with empty list of values for field (id) (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Expression/Comparison.php:226)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Expression/Comparison.php(159): Cake\Database\Expression\Comparison->_stringExpression(Object(Cake\Database\ValueBinder))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Expression/QueryExpression.php(557): Cake\Database\Expression\Comparison->sql(Object(Cake\Database\ValueBinder))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/QueryCompiler.php(134): Cake\Database\Expression\QueryExpression->sql(Object(Cake\Database\ValueBinder))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Query.php(308): Cake\Database\QueryCompiler->Cake\Database\{closure}(Object(Cake\Database\Expression\QueryExpression), 'where')
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/QueryCompiler.php(98): Cake\Database\Query->traverse(Object(Closure), Array)
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Driver.php(420): Cake\Database\QueryCompiler->compile(Object(Cake\ORM\Query), Object(Cake\Database\ValueBinder))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(327): Cake\Database\Driver->compileQuery(Object(Cake\ORM\Query), Object(Cake\Database\ValueBinder))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Query.php(279): Cake\Database\Connection->compileQuery(Object(Cake\ORM\Query), Object(Cake\Database\ValueBinder))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/Query.php(1136): Cake\Database\Query->sql(Object(Cake\Database\ValueBinder))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(137): Cake\ORM\Query->sql()
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(283): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(290): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(340): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(345): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Query.php(218): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/Table.php(1835): Cake\Database\Query->execute()
+#18 /home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php(134): Cake\ORM\Table->deleteAll(Array)
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\ClientesController->edit('12')
+#20 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#21 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#22 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#34 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#35 {main}
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+
+
+2021-12-14 00:10:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 00:11:00 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 138]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 138
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:01 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 00:11:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 00:11:17 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 138]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 138
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:17 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:11:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:14:26 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 140]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 140
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:14:26 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:14:26 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:14:26 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:14:26 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:15 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 140]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 140
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:15 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:48 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 140]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 140
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:49 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:21:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:26:10 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 140]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 140
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:26:11 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:26:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:26:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:26:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:43:56 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:43:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:43:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:43:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:46:05 Error: [InvalidArgumentException] The Cidades association is not defined on Clientes. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/Table.php:1013)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(550): Cake\ORM\Table->getAssociation('Cidades')
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(376): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\ClientesTable), 'Cidades', Array, Array)
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(506): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\ClientesTable))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(477): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\ClientesTable))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/Query.php(1185): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ClientesTable), true)
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/Query.php(1134): Cake\ORM\Query->_transformQuery()
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(137): Cake\ORM\Query->sql()
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(283): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(290): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(340): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Connection.php(345): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Database/Query.php(218): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#14 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/Query.php(1155): Cake\Database\Query->execute()
+#15 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(310): Cake\ORM\Query->_execute()
+#16 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/Query.php(1099): Cake\ORM\Query->_all()
+#17 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(472): Cake\ORM\Query->all()
+#18 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(483): Cake\ORM\Query->first()
+#19 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/ORM/Table.php(1656): Cake\ORM\Query->firstOrFail()
+#20 /home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php(89): Cake\ORM\Table->get(Array, Array)
+#21 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\ClientesController->view('12')
+#22 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ClientesController))
+#24 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#37 {main}
+Request URL: /clientes/view/12
+Referer URL: http://localhost:8765/clientes
+
+
+2021-12-14 00:46:50 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 134]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 134
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:46:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:46:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:46:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 00:46:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 01:15:24 Warning: Warning (2): Invalid argument supplied for foreach() in [/home/jose/projetos/Desafio_JavaScript/src/Controller/ClientesController.php, line 134]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+App\Controller\ClientesController::edit() - APP/Controller/ClientesController.php, line 134
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 164
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 01:15:25 Warning: Warning (512): Unable to emit headers. Headers sent in file=/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 01:15:25 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 01:15:25 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 01:15:25 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /clientes/edit/12
+Referer URL: http://localhost:8765/clientes/edit/12
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2021-12-14 01:42:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:42:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:42:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:42:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:42:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:43:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:43:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:44:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:45:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:45:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:45:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+
+2021-12-14 01:48:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. (/home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(100): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/jose/projetos/Desafio_JavaScript/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/jose/projetos/Desafio_JavaScript/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /css/bootstrap.min.css.map
+
+

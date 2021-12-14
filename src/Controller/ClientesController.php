@@ -86,61 +86,82 @@ class ClientesController extends AppController
     public function view($id)
     {
         $cliente = $this->Clientes->get($id, [
-            'contain' => ['Enderecos', 'Contatos','Cidades']
+            'contain' => ['Enderecos', 'Contatos']
         ]);
         $this->set(compact('cliente'));
     }
     public function edit($id = null)
     {
-
         $this->loadModel('Enderecos');
         $this->loadModel('Contatos');
-        
         $cliente = $this->Clientes->get($id, [
             'contain' => ['Enderecos', 'Contatos'],
         ]);
-        $id_endereco = 0;
-        foreach ($cliente->enderecos as $endereco) {
-            $id_endereco = $endereco->id;
-        }
-
+        $id_endereco = $cliente->enderecos[0]->id;
         $endereco = $this->Enderecos->get($id_endereco);
 
         if ($this->request->is(['patch', 'post', 'put'])) {
             $dados = $this->request->getData();
 
-            // debug($dados);
-
             $cliente->set([
                 'nome' => $dados['dados']['dadosPessoais']['nome'],
                 'cpf' => $dados['dados']['dadosPessoais']['cpf'],
-                'email' => $dados['dados']['dadosPessoais']['email']
+                'email' => $dados['dados']['dadosPessoais']['email'],
+                'status' => $dados['dados']['dadosPessoais']['status']
             ]);
 
-            debug($cliente);
-        //   if ($this->Clientes->save($cliente)) {
+          if ($this->Clientes->save($cliente)) {
+            $endereco->set([
+                'cep' => str_replace("-", "", $dados['dados']['endereco']['cep']),
+                'logradouro' => $dados['dados']['endereco']['logradouro'],
+                'numero' => $dados['dados']['endereco']['numero'],
+                'bairro' => $dados['dados']['endereco']['bairro'],
+                'complemento' => $dados['dados']['endereco']['complemento']
+            ]);
 
-        //   }
-        //         $endereco->set([
-        //             'cep' => str_replace("-", "", $dados['dados']['endereco']['cep']),
-        //             'logadouro' => $dados['dados']['endereco']['logradouro'],
-        //             'numero' => $dados['dados']['endereco']['numero'],
-        //             'bairro' => $dados['dados']['endereco']['bairro'],
-        //             'complemento' => $dados['dados']['endereco']['complemento']
+            if ($this->Enderecos->save($endereco)) {
 
-        //         ]);
+                $idContatos = [];
 
-        //         if ($this->Enderecos->save($endereco)) {
+                foreach ($cliente->contatos as $contato){
+                   $idContatos[] = $contato->id;
+                }
+                if($idContatos){
+                    $this->Contatos->deleteAll(['id IN' => $idContatos]);
+                }
 
-        //             // foreach ($cliente->contatos as $contato) {
-        //             //     $contato->set([
-        //             //         'telefone' => $dados['dados']['contato']['telefone']
-        //             //     ]);
-        //             // }
-        //             // var_dump($contato);
+               $entityContatos = [];
+               foreach ($dados['dados']['contatos']['array'] as $contato) {
+                   array_push($entityContatos, [
+                       'id_cliente' => $id,
+                       'codigo_pais' => $contato['codigo_pais'],
+                       'ddd' => $contato['ddd'],
+                       'numero' => $contato['numero']
+                   ]);
+               }
 
-        //         };
-         
+               $contatos = TableRegistry::getTableLocator()->get('Contatos');
+               $entities = $contatos->newEntities($entityContatos);
+
+               foreach ($entities as $entity) {
+                   $contatos->save($entity);
+               }             
+
+            }
+
+          }else{
+            
+            $resultados = $cliente->getErrors();
+            foreach($resultados as $key =>$resultado){
+                $erro['chave'] = $key;
+                foreach($resultado as $resultad){
+                    $erro['mensagem'] = $resultad;
+                }
+            }
+            $erro['sucesso'] = false;
+            return $this->response->withType("application/json")->withStringBody(json_encode($erro));
+
+        }             
 
         }
 
