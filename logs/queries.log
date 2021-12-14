@@ -11860,3 +11860,510 @@
 2021-12-14 02:15:24 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
 2021-12-14 02:15:24 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
 2021-12-14 02:15:24 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:19:00 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-14 02:19:00 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-14 02:19:00 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-14 02:19:00 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-14 02:19:00 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-14 02:19:00 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-14 02:19:00 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-14 02:19:00 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-14 02:19:00 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-14 02:19:00 Debug: duration=2 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-14 02:19:00 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-14 02:19:00 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-14 02:19:00 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:19:00 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:19:00 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:19:00 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:19:43 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:19:43 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:19:43 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:19:43 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:20:32 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:20:32 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:20:32 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:20:32 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:23:13 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-14 02:23:13 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-14 02:23:13 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-14 02:23:13 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-14 02:23:13 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-14 02:23:13 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-14 02:23:13 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-14 02:23:13 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-14 02:23:13 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-14 02:23:13 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-14 02:23:13 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-14 02:23:13 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-14 02:23:13 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:23:13 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:23:13 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:23:13 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:23:23 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:23:23 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:23:23 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:23:23 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:23:23 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:23:23 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'andre@outlook.com' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:23:23 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '75564826183' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:23:23 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Andre Leonizio Ferreira' , cpf = '75564826183' , email = 'andre@outlook.com' , status = 1 , modified = '2021-12-14 02:23:23' WHERE id = 12
+2021-12-14 02:23:23 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:23:23 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:23:23 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua teste122' , numero = '13' , complemento = '' , bairro = 'Conjunto Residencial Irisville' , cep = '74786618' WHERE id = 12
+2021-12-14 02:23:23 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:23:23 Debug: duration=491 rows=1 DELETE FROM contatos WHERE id in (31)
+2021-12-14 02:23:23 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:23:23 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (12, '55', '62', '35513232')
+2021-12-14 02:23:23 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:23:25 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:23:25 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:23:27 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:23:27 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:23:27 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:23:27 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:23:40 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:23:40 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:23:40 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:23:40 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:23:40 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:23:40 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'andre@outlook.com' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:23:40 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '75564826183' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:23:40 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Andre Leonizio Ferreira' , cpf = '75564826183' , email = 'andre@outlook.com' , status = 1 , modified = '2021-12-14 02:23:40' WHERE id = 12
+2021-12-14 02:23:40 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:23:40 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:23:40 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua teste122' , numero = '13' , complemento = '' , bairro = 'Conjunto Residencial Irisville' , cep = '74786618' WHERE id = 12
+2021-12-14 02:23:40 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:23:40 Debug: duration=130 rows=1 DELETE FROM contatos WHERE id in (32)
+2021-12-14 02:23:40 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:23:40 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (12, '55', '62', '35513232')
+2021-12-14 02:23:40 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:23:42 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:23:42 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:23:45 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:23:45 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:23:45 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:23:45 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:24:00 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:24:00 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:24:00 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:24:00 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:24:00 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:00 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'andre@outlook.com' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:24:00 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '75564826183' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:24:00 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Andre Leonizio Ferreira' , cpf = '75564826183' , email = 'andre@outlook.com' , status = 1 , modified = '2021-12-14 02:24:00' WHERE id = 12
+2021-12-14 02:24:00 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:00 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:00 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua teste122' , numero = '13' , complemento = '' , bairro = 'Conjunto Residencial Irisville' , cep = '74786618' WHERE id = 12
+2021-12-14 02:24:00 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:00 Debug: duration=87 rows=1 DELETE FROM contatos WHERE id in (33)
+2021-12-14 02:24:00 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:00 Debug: duration=1 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (12, '55', '62', '35513232')
+2021-12-14 02:24:00 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:01 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:01 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (12, '55', '62', '35513221')
+2021-12-14 02:24:01 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:02 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:24:02 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:24:04 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:24:04 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:24:04 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:24:04 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:24:14 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:24:14 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:24:14 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:24:14 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:24:14 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:14 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'andre@outlook.com' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:24:14 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '75564826183' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:24:14 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Andre Leonizio Ferreira' , cpf = '75564826183' , email = 'andre@outlook.com' , status = 1 , modified = '2021-12-14 02:24:14' WHERE id = 12
+2021-12-14 02:24:14 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:14 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:14 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua teste122' , numero = '13' , complemento = '' , bairro = 'Conjunto Residencial Irisville' , cep = '74786618' WHERE id = 12
+2021-12-14 02:24:14 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:14 Debug: duration=260 rows=2 DELETE FROM contatos WHERE id in (34,35)
+2021-12-14 02:24:14 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:14 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (12, '55', '62', '35513232')
+2021-12-14 02:24:14 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:14 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:14 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (12, '', '62', '35513221')
+2021-12-14 02:24:14 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:16 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:24:16 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:24:18 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:24:18 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:24:18 Debug: duration=1 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:24:18 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:24:26 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 12 LIMIT 1
+2021-12-14 02:24:26 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (12)
+2021-12-14 02:24:26 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (12)
+2021-12-14 02:24:26 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 12 LIMIT 1
+2021-12-14 02:24:26 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:26 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'andre@outlook.com' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:24:26 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '75564826183' AND NOT (Clientes.id = 12)) LIMIT 1
+2021-12-14 02:24:26 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Andre Leonizio Ferreira' , cpf = '75564826183' , email = 'andre@outlook.com' , status = 1 , modified = '2021-12-14 02:24:26' WHERE id = 12
+2021-12-14 02:24:26 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:26 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:26 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua teste122' , numero = '13' , complemento = '' , bairro = 'Conjunto Residencial Irisville' , cep = '74786618' WHERE id = 12
+2021-12-14 02:24:26 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:26 Debug: duration=198 rows=2 DELETE FROM contatos WHERE id in (36,37)
+2021-12-14 02:24:26 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:26 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (12, '55', '62', '35513232')
+2021-12-14 02:24:26 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:26 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:26 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (12, '55', '62', '35513221')
+2021-12-14 02:24:26 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:28 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:24:28 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:24:39 Debug: duration=0 rows=2 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 10
+2021-12-14 02:24:39 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:24:42 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:24:42 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:24:45 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 7 LIMIT 1
+2021-12-14 02:24:45 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (7)
+2021-12-14 02:24:45 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (7)
+2021-12-14 02:24:45 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 7 LIMIT 1
+2021-12-14 02:24:51 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 7 LIMIT 1
+2021-12-14 02:24:51 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (7)
+2021-12-14 02:24:51 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (7)
+2021-12-14 02:24:51 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 7 LIMIT 1
+2021-12-14 02:24:51 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:51 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'gabrielfb@gmail.com.br' AND NOT (Clientes.id = 7)) LIMIT 1
+2021-12-14 02:24:51 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '69692978109' AND NOT (Clientes.id = 7)) LIMIT 1
+2021-12-14 02:24:51 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Gabriel Ferreira Brito' , cpf = '69692978109' , email = 'gabrielfb@gmail.com.br' , status = 0 , modified = '2021-12-14 02:24:51' WHERE id = 7
+2021-12-14 02:24:51 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:51 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:51 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua 09' , numero = '71' , complemento = '' , bairro = 'Polo Empresarial Goiás - Etapa X' , cep = '74985218' WHERE id = 7
+2021-12-14 02:24:51 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:52 Debug: duration=143 rows=1 DELETE FROM contatos WHERE id in (10)
+2021-12-14 02:24:52 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:24:52 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (7, '55', '62', '999346065')
+2021-12-14 02:24:52 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:24:53 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:24:53 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:24:57 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 9 LIMIT 1
+2021-12-14 02:24:57 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (9)
+2021-12-14 02:24:57 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (9)
+2021-12-14 02:24:57 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 9 LIMIT 1
+2021-12-14 02:25:08 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 9 LIMIT 1
+2021-12-14 02:25:08 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (9)
+2021-12-14 02:25:08 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (9)
+2021-12-14 02:25:08 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 9 LIMIT 1
+2021-12-14 02:25:08 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:25:08 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'luizinho@gmail.com' AND NOT (Clientes.id = 9)) LIMIT 1
+2021-12-14 02:25:08 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '07828732198' AND NOT (Clientes.id = 9)) LIMIT 1
+2021-12-14 02:25:08 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Luiz Guilherme Almeida' , cpf = '07828732198' , email = 'luizinho@gmail.com' , status = 1 , modified = '2021-12-14 02:25:08' WHERE id = 9
+2021-12-14 02:25:08 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:25:08 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:25:08 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua 1' , numero = '0' , complemento = '' , bairro = 'Setor Leste Universitário' , cep = '74603067' WHERE id = 9
+2021-12-14 02:25:08 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:25:08 Debug: duration=149 rows=2 DELETE FROM contatos WHERE id in (17,18)
+2021-12-14 02:25:08 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:25:08 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (9, '55', '62', '00000000')
+2021-12-14 02:25:08 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:25:10 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:25:10 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:25:12 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 9 LIMIT 1
+2021-12-14 02:25:12 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (9)
+2021-12-14 02:25:12 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (9)
+2021-12-14 02:25:15 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-14 02:25:15 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-14 02:25:15 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-14 02:25:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-14 02:25:15 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:25:15 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:25:17 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-14 02:25:17 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-14 02:25:17 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-14 02:25:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-14 02:25:17 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-14 02:25:17 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-14 02:25:17 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-14 02:25:17 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-14 02:25:17 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 9 LIMIT 1
+2021-12-14 02:25:17 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (9)
+2021-12-14 02:25:17 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (9)
+2021-12-14 02:25:17 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 9 LIMIT 1
+2021-12-14 02:25:30 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 9 LIMIT 1
+2021-12-14 02:25:30 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (9)
+2021-12-14 02:25:30 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (9)
+2021-12-14 02:25:30 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 9 LIMIT 1
+2021-12-14 02:25:30 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:25:30 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'luizinho@gmail.com' AND NOT (Clientes.id = 9)) LIMIT 1
+2021-12-14 02:25:30 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '07828732198' AND NOT (Clientes.id = 9)) LIMIT 1
+2021-12-14 02:25:30 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Luiz Guilherme Almeida' , cpf = '07828732198' , email = 'luizinho@gmail.com' , status = 1 , modified = '2021-12-14 02:25:30' WHERE id = 9
+2021-12-14 02:25:30 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:25:31 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:25:31 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua 1' , numero = '0' , complemento = '' , bairro = 'Setor Leste Universitário' , cep = '74603067' WHERE id = 9
+2021-12-14 02:25:31 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:25:31 Debug: duration=110 rows=1 DELETE FROM contatos WHERE id in (41)
+2021-12-14 02:25:31 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:25:31 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (9, '55', '62', '35511255')
+2021-12-14 02:25:31 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:25:33 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:25:33 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:25:35 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 9 LIMIT 1
+2021-12-14 02:25:35 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (9)
+2021-12-14 02:25:35 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (9)
+2021-12-14 02:25:38 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:25:38 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:34:21 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:34:21 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-14 02:34:21 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-14 02:34:21 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-14 02:34:21 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-14 02:34:21 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'josegabrielbm@outlook.com' LIMIT 1
+2021-12-14 02:34:21 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05870055130' LIMIT 1
+2021-12-14 02:34:21 Debug: duration=0 rows=0 ROLLBACK
+2021-12-14 02:34:48 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:34:48 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'josegabrielbm@outlook.com' LIMIT 1
+2021-12-14 02:34:48 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05796965026' LIMIT 1
+2021-12-14 02:34:48 Debug: duration=0 rows=0 ROLLBACK
+2021-12-14 02:35:17 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:35:17 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'fabricio@outlook.com' LIMIT 1
+2021-12-14 02:35:17 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05796965026' LIMIT 1
+2021-12-14 02:35:17 Debug: duration=0 rows=1 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES ('Fabricio Fonseca Silva', '05796965026', 'fabricio@outlook.com', '2021-12-14 02:35:17', '2021-12-14 02:35:17')
+2021-12-14 02:35:17 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:35:17 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:35:17 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-14 02:35:17 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-14 02:35:17 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-14 02:35:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-14 02:35:17 Debug: duration=2 rows=1 INSERT INTO enderecos (id_cliente, id_cidade, logradouro, numero, complemento, bairro, cep) VALUES (13, 1, 'Rua 01', '0', '', 'Parque Hayala', '74959198')
+2021-12-14 02:35:17 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:35:17 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-14 02:35:17 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-14 02:35:17 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-14 02:35:17 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-14 02:35:17 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:35:17 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (13, '55', '62', '35511323')
+2021-12-14 02:35:17 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:35:19 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:35:19 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:35:22 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 13 LIMIT 1
+2021-12-14 02:35:22 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (13)
+2021-12-14 02:35:22 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (13)
+2021-12-14 02:35:25 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:35:25 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:35:27 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 13 LIMIT 1
+2021-12-14 02:35:27 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (13)
+2021-12-14 02:35:27 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (13)
+2021-12-14 02:35:27 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 13 LIMIT 1
+2021-12-14 02:35:36 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 13 LIMIT 1
+2021-12-14 02:35:36 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (13)
+2021-12-14 02:35:36 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (13)
+2021-12-14 02:35:36 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 13 LIMIT 1
+2021-12-14 02:35:36 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:35:36 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'fabricio@outlook.com' AND NOT (Clientes.id = 13)) LIMIT 1
+2021-12-14 02:35:36 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '05796965026' AND NOT (Clientes.id = 13)) LIMIT 1
+2021-12-14 02:35:36 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Fabricio Fonseca Silva' , cpf = '05796965026' , email = 'fabricio@outlook.com' , status = 1 , modified = '2021-12-14 02:35:36' WHERE id = 13
+2021-12-14 02:35:36 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:35:36 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:35:36 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua 01' , numero = '0' , complemento = '' , bairro = 'Parque Hayala' , cep = '74959198' WHERE id = 13
+2021-12-14 02:35:36 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:35:37 Debug: duration=165 rows=1 DELETE FROM contatos WHERE id in (43)
+2021-12-14 02:35:37 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:35:37 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (13, '55', '62', '35511323')
+2021-12-14 02:35:37 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:35:38 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:35:38 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:35:46 Debug: duration=0 rows=3 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 10
+2021-12-14 02:35:46 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:35:49 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:35:49 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:37:19 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:37:19 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-14 02:37:19 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-14 02:37:19 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-14 02:37:19 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-14 02:37:19 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'joaofilho@gmail.com' LIMIT 1
+2021-12-14 02:37:19 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05796965026' LIMIT 1
+2021-12-14 02:37:19 Debug: duration=0 rows=0 ROLLBACK
+2021-12-14 02:37:43 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:37:43 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'joaofilho@gmail.com' LIMIT 1
+2021-12-14 02:37:43 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '47607644024' LIMIT 1
+2021-12-14 02:37:43 Debug: duration=0 rows=1 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES ('Joao Carlos Filho', '47607644024', 'joaofilho@gmail.com', '2021-12-14 02:37:43', '2021-12-14 02:37:43')
+2021-12-14 02:37:43 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:37:43 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:37:43 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-14 02:37:43 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-14 02:37:43 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-14 02:37:43 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-14 02:37:43 Debug: duration=0 rows=1 INSERT INTO enderecos (id_cliente, id_cidade, logradouro, numero, complemento, bairro, cep) VALUES (14, 1, 'Rua 07', '77', '', 'Conjunto Residencial Irisville', '74786622')
+2021-12-14 02:37:43 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:37:43 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-14 02:37:43 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-14 02:37:43 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-14 02:37:43 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-14 02:37:43 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:37:43 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (14, '55', '62', '994551232')
+2021-12-14 02:37:43 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:37:44 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:37:44 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (14, '55', '62', '35511047')
+2021-12-14 02:37:44 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:37:45 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:37:45 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:37:48 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 14 LIMIT 1
+2021-12-14 02:37:48 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (14)
+2021-12-14 02:37:48 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (14)
+2021-12-14 02:37:51 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:37:51 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:37:53 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 14 LIMIT 1
+2021-12-14 02:37:53 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (14)
+2021-12-14 02:37:53 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (14)
+2021-12-14 02:37:53 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 14 LIMIT 1
+2021-12-14 02:37:59 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 14 LIMIT 1
+2021-12-14 02:37:59 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (14)
+2021-12-14 02:37:59 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (14)
+2021-12-14 02:37:59 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 14 LIMIT 1
+2021-12-14 02:37:59 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:37:59 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'joaofilho@gmail.com' AND NOT (Clientes.id = 14)) LIMIT 1
+2021-12-14 02:37:59 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '47607644024' AND NOT (Clientes.id = 14)) LIMIT 1
+2021-12-14 02:37:59 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Joao Carlos Filho' , cpf = '47607644024' , email = 'joaofilho@gmail.com' , status = 1 , modified = '2021-12-14 02:37:59' WHERE id = 14
+2021-12-14 02:37:59 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:37:59 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:37:59 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua 07' , numero = '77' , complemento = '' , bairro = 'Conjunto Residencial Irisville' , cep = '74786622' WHERE id = 14
+2021-12-14 02:37:59 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:38:00 Debug: duration=188 rows=2 DELETE FROM contatos WHERE id in (45,46)
+2021-12-14 02:38:00 Debug: duration=0 rows=0 BEGIN
+2021-12-14 02:38:00 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (14, '55', '62', '994551232')
+2021-12-14 02:38:00 Debug: duration=0 rows=0 COMMIT
+2021-12-14 02:38:01 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:38:01 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:38:03 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 14 LIMIT 1
+2021-12-14 02:38:03 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (14)
+2021-12-14 02:38:03 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (14)
+2021-12-14 02:38:06 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:38:06 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:38:09 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:38:09 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:38:12 Debug: duration=0 rows=4 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 10
+2021-12-14 02:38:12 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:38:14 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:38:14 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:38:21 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:38:21 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:38:31 Debug: duration=0 rows=4 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%jo%' AND cpf like '%%' AND email like '%%') ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:38:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%jo%' AND cpf like '%%' AND email like '%%')
+2021-12-14 02:38:37 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%05870055130%' AND email like '%%') ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:38:37 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%05870055130%' AND email like '%%')
+2021-12-14 02:39:51 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-14 02:39:51 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-14 02:39:51 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-14 02:39:51 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-14 02:39:51 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%05870055130%' AND email like '%%') ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:39:51 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%05870055130%' AND email like '%%')
+2021-12-14 02:39:55 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1) ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:39:55 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 1)
+2021-12-14 02:40:01 Debug: duration=0 rows=2 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 0) ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:40:01 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%%' AND cpf like '%%' AND email like '%%' AND status = 0)
+2021-12-14 02:40:09 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%rosa%' AND cpf like '%%' AND email like '%%' AND status = 0) ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:40:09 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%rosa%' AND cpf like '%%' AND email like '%%' AND status = 0)
+2021-12-14 02:40:12 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%rosa%' AND cpf like '%%' AND email like '%%' AND status = 0) ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:40:12 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%rosa%' AND cpf like '%%' AND email like '%%' AND status = 0)
+2021-12-14 02:40:16 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE (nome like '%rosa%' AND cpf like '%%' AND email like '%%' AND status = 0) ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:40:16 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes WHERE (nome like '%rosa%' AND cpf like '%%' AND email like '%%' AND status = 0)
+2021-12-14 02:40:31 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.status asc, Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:40:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:40:34 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.status desc, Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:40:34 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:40:35 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.status asc, Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:40:35 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-14 02:40:37 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.nome asc, Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-14 02:40:37 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes

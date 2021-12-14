@@ -60,9 +60,11 @@ function validarCampos(dados){
     }else if(dados['dadosPessoais']['cpf'] .length != 11 && dados['dadosPessoais']['cpf']  != ''){
         let mensageErro = 'O campo CPF deve conter 11 digitos'
         adicionarMensagemErro(mensageErro);
+        document.getElementById("cpf").focus();
     }else if(dados['endereco']['cep'].length < 8 || dados['endereco']['cep'].length > 10){
         let mensageErro = ' Formato de Cep invalido,o mesmo deve conter entre 8 a 10 digitos'
         adicionarMensagemErro(mensageErro);
+        document.getElementById("cep").focus();
     }else if(dados['endereco']['numero'].length > 10){
         let mensageErro = ' Campo numero contem mais de 10 caracteres'
         adicionarMensagemErro(mensageErro);
