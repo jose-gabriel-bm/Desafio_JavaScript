@@ -17530,3 +17530,26 @@
             WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
 2021-12-17 01:36:25 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
 2021-12-17 01:36:25 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 12:35:19 Debug: duration=76 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 12:35:19 Debug: duration=155 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 12:35:19 Debug: duration=34 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 12:35:19 Debug: duration=110 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 12:35:19 Debug: duration=34 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 12:35:19 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 12:35:25 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 12:35:25 Debug: duration=70 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 12:35:25 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 12:35:25 Debug: duration=64 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 12:35:25 Debug: duration=47 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
