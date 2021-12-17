@@ -35,7 +35,7 @@ body{
   display: none;
 }
 
-#formulario input,#formulario textarea{
+#formulario input,#formulario textarea, #formulario select{
   padding: 10px;
   border:1px solid rgba(30,144,255, 0.9);
   border-radius: 4px;
@@ -49,6 +49,9 @@ body{
   margin-bottom: 10px;
   margin-top: 10px;
 
+}
+#formulario select{
+  background-color: white;
 }
 #formulario label{
   margin-bottom: 0px;

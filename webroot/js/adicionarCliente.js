@@ -15,43 +15,43 @@ $(function () {
         prev_fs.show(800);
     });
     $('input[name=next1]').click(function () {
-        let nome = document.getElementById('nome').value;
-        let cpf = document.getElementById('cpf').value;
-        let email = document.getElementById('email').value;
+        // let nome = document.getElementById('nome').value;
+        // let cpf = document.getElementById('cpf').value;
+        // let email = document.getElementById('email').value;
 
-        if (nome == '' || cpf == '' || email == '') {
-            let mensageErro = 'E obrigatorio o preenchimento de todos os campos'
-            adicionarMensagemErro(mensageErro);
+        // if (nome == '' || cpf == '' || email == '') {
+        //     let mensageErro = 'E obrigatorio o preenchimento de todos os campos'
+        //     adicionarMensagemErro(mensageErro);
 
-        } else {
-            if (cpf.length != 11 && cpf != '') {
-                let mensageErro = 'O campo CPF deve conter 11 digitos'
-                adicionarMensagemErro(mensageErro);
-            } else {
+        // } else {
+        //     if (cpf.length != 11 && cpf != '') {
+        //         let mensageErro = 'O campo CPF deve conter 11 digitos'
+        //         adicionarMensagemErro(mensageErro);
+        //     } else {
                 next($(this));
-                $('.mensagem').html('');
-            }
-        }
+        //         $('.mensagem').html('');
+        //     }
+        // }
     });
 
     $('input[name=next2]').click(function () {
-        let numero = document.getElementById('numero').value;
-        let ddd = document.getElementById('ddd').value;
-        let codigo_pais = document.getElementById('codigo_pais').value;
+        // let numero = document.getElementById('numero').value;
+        // let ddd = document.getElementById('ddd').value;
+        // let codigo_pais = document.getElementById('codigo_pais').value;
 
-        if (numero.length < 8 || numero.length > 9) {
-            let mensageErro = 'O campo numero deve conter de 8 a 9 digitos'
-            adicionarMensagemErro(mensageErro);
-        } else if (ddd.length != 2 || codigo_pais.length != 2) {
-            let mensageErro = 'O campo DDD e codigo do pais deve conter apenas 2 digitos'
-            adicionarMensagemErro(mensageErro);
-        } else if (ddd == '' || codigo_pais == '' || codigo_pais == '') {
-            let mensageErro = ' E obrigatorio o preechimento de todos os campos'
-            adicionarMensagemErro(mensageErro);
-        } else {
-            $('.mensagem').html('');
+        // if (numero.length < 8 || numero.length > 9) {
+        //     let mensageErro = 'O campo numero deve conter de 8 a 9 digitos'
+        //     adicionarMensagemErro(mensageErro);
+        // } else if (ddd.length != 2 || codigo_pais.length != 2) {
+        //     let mensageErro = 'O campo DDD e codigo do pais deve conter apenas 2 digitos'
+        //     adicionarMensagemErro(mensageErro);
+        // } else if (ddd == '' || codigo_pais == '' || codigo_pais == '') {
+        //     let mensageErro = ' E obrigatorio o preechimento de todos os campos'
+        //     adicionarMensagemErro(mensageErro);
+        // } else {
+        //     $('.mensagem').html('');
             next($(this));
-        }
+        // }
     });
 
     $('input[type=submit]').click(function (evento) {
@@ -200,6 +200,47 @@ function removerCampoContato() {
     }
 }
 
+function selecionarCidades(){
+    var idEstado = document.getElementById("estado").value;    
+    $.ajax({
+        type: 'POST',
+        url: 'selecionarcidade',
+        dataType: 'json',
+        data: { idEstado },
+        beforeSend: function () {
+        },
+        success: function (resposta) {
+            if(resposta){
+                let elementoReferencia = document.getElementById('cidade');
+                elementoReferencia.innerText = "";
+
+                resposta.map(function(respost, i) {                   
+                    //elementoReferencia.appendChild(new Option (respost.nome,respost.id));
+                    criacaoOptionsCidades(respost, elementoReferencia);
+                })
+            }
+        }
+    });
+    
+}
+
+ function criacaoOptionsCidades(respost, elementoReferencia){
+     
+    let option = document.createElement("option");
+
+    let value = document.createAttribute('value');
+    value.value = respost.id;
+
+    let id = document.createAttribute('id');
+    id.value = respost.nome;
+
+    option.setAttributeNode(value);
+    option.setAttributeNode(id);
+
+    option.text = respost.nome;
+    elementoReferencia.appendChild(option);
+}
+
 const cep = document.querySelector("#cep");
 
 cep.addEventListener("blur", (e) => {
@@ -218,6 +259,26 @@ cep.addEventListener("blur", (e) => {
 })
 
 const show = (result) => {
+
+    let uf = result['uf'];
+    let campoEstado = document.getElementById(uf);
+
+    let selected = document.createAttribute('selected');
+    selected.value = true;
+
+    campoEstado.setAttributeNode(selected);
+
+    selecionarCidades();
+
+
+    let cidade1 = result['localidade'];
+    let campoCidade = document.getElementById(cidade1);
+
+    console.log(campoCidade);
+
+    // selected.value = true;
+    // campoCidade.setAttributeNode(selected);
+    
     for (const campo in result) {
         if (document.querySelector("#" + campo)) {
             document.querySelector("#" + campo).value = result[campo]
