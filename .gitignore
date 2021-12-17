@@ -1,0 +1,16 @@
+/vendor/*
+/tmp/*
+/logs/*
+/nbproject/private/
+/.vscode
+/.idea/
+/__pycache__/
+/python/Variacao_unitario_Banco_de_preço/.idea/
+/python/predicao_baixas/.idea/
+/python/conciliacao_v2/.idea/
+/config/database.php
+/debug.log
+/.bash_aliases
+/composer.phar
+*.pyc
+/config/hexa-v2-developer-firebase-adminsdk.json
