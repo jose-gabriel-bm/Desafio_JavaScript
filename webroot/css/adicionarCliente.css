@@ -278,6 +278,11 @@ tbody{
   
 }
 
+.principalIndex h3{
+  color:#4682B4;
+  margin-bottom: 25px;
+}
+
 .adicionarCliente{
   padding: 5px;
   margin-top: 15px;
@@ -462,5 +467,88 @@ ul.pagination .disabled:hover a {
 #edit .apagarContato:hover{
   background-color:#8B0000; 
   color: white;
+}
+
+.btnRedirect{
+  box-sizing: border-box;
+  float: center;
+  width: 32%;
+  display: inline;
+  border-radius: 4px;
+  outline: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color:white;
+}
+
+#btnStatus{
+  width: 30%;
+  border-color: #C0C0C0;
+  background-color: #A9A9A9;
+
+}
+#btnEdit{
+  background-color: #6495ED;
+  border-color: #87CEFA;
+  width: 25%;
+
+}
+#btnView{
+  background-color: #3CB371;
+  border-color: #8FBC8F;
+  width: 32%;
+
+}
+
+#btnStatus:hover{
+  width: 30%;
+  border:1px solid #D3D3D3;
+  background-color: #D3D3D3;
+  color: #A9A9A9;
+
+}
+#btnEdit:hover{
+  background-color: #87CEEB;
+  border-color: #ADD8E6;
+  width: 25%;
+  color: #6495ED;
+
+}
+#btnView:hover{
+  background-color: #90EE90;
+  border-color: #8FBC8F;
+  width: 32%;
+  color: #3CB371;
+
+}
+#btnVoltar{
+  margin-top: 10px;
+  background-color: #6495ED;
+  border-color: #87CEFA;
+  width: 30%;
+  height: 40px;
+  float: center;
+}
+#btnVoltar:hover{
+  background-color: #87CEEB;
+  border-color: #ADD8E6;
+  width: 30%;
+  height: 40px;
+  color: #6495ED;
+
+}
+#btnEnviar{
+  margin-top: 10px;
+  background-color: #6495ED;
+  border-color: #87CEFA;
+  width: 30%;
+  height: 40px;
+}
+#btnEnviar:hover{
+  background-color: #87CEEB;
+  border-color: #ADD8E6;
+  width: 30%;
+  height: 40px;
+  color: #6495ED;
 }
 

@@ -67,17 +67,14 @@
                     <td style="text-align:center;"><?php echo $cliente->opcoes_status; ?></td>
 
                     <td style="text-align:center;">
-                        <?php echo $this->Html->link(
-                            __(' Visualizar '),
-                            ['controller' => 'clientes', 'action' => 'view', $cliente->id]
-                        );
 
-                        echo $this->Html->link(
-                            __(' Editar '),
-                            ['controller' => 'clientes', 'action' => 'edit', $cliente->id]
-                        );
-
-                        ?>
+                    <button class="btnRedirect" id="btnView" onclick="redirecionarTelaView(`${<?= $cliente->id ?>}`)">Visualizar</button>
+                    <button class="btnRedirect" id="btnEdit" onclick="redirecionarTelaEdit(`${<?= $cliente->id ?>}`)">Editar</button>
+                    <?php if($cliente->status == true):?>
+                        <button class="btnRedirect" id="btnStatus" onclick="mudancaStatus(`${<?= $cliente->id ?>}`)">Inativar</button>
+                    <?php else: ?>
+                        <button class="btnRedirect" id="btnStatus" onclick="mudancaStatus(`${<?= $cliente->id ?>}`)">Ativar</button>
+                    <?php endif;?>
 
                     </td>
                 </tr>
@@ -102,4 +99,5 @@
         </p>
     </div>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <?= $this->Html->script('indexCliente') ?>

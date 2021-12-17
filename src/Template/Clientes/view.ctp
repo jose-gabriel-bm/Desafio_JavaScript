@@ -68,5 +68,6 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <?PHP echo $this->Html->link(__('Voltar  '), ['controller' => 'Clientes','action' =>'index']);?>
+    <button class="btnRedirect" id="btnVoltar" onclick="redirecionarTelaIndex()">Voltar</button>
 </div>
+<?= $this->Html->script('viewCliente') ?>

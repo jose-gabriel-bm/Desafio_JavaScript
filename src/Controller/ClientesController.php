@@ -236,4 +236,3 @@ class ClientesController extends AppController
             return $this->response->withType("application/json")->withStringBody(json_encode($cidades));
         }         
     }
-}
