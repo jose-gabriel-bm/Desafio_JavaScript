@@ -33,7 +33,7 @@ class ClientesController extends AppController
         if ($this->request->is('post')) {
 
             $dados = $this->request->getData();
-
+            
             $entityDadosPessoais->nome = $dados['dados']['dadosPessoais']['nome'];
             $entityDadosPessoais->cpf = $dados['dados']['dadosPessoais']['cpf'];
             $entityDadosPessoais->email = $dados['dados']['dadosPessoais']['email'];
@@ -43,7 +43,7 @@ class ClientesController extends AppController
                 $idCliente = $entityDadosPessoais->id;
 
                 $entityEndereco->id_cliente = $idCliente;
-                $entityEndereco->id_cidade = 1;
+                $entityEndereco->id_cidade = $dados['dados']['endereco']['id_cidade'];
                 $entityEndereco->logradouro = $dados['dados']['endereco']['logradouro'];
                 $entityEndereco->numero = $dados['dados']['endereco']['nCasa'];
                 $entityEndereco->complemento = $dados['dados']['endereco']['complemento'];
@@ -80,7 +80,7 @@ class ClientesController extends AppController
                         $erro['mensagem'] = $resultad;
                     }
                 }
-                $erro['sucesso'] = false;
+            $erro['sucesso'] = false;
             return $this->response->withType("application/json")->withStringBody(json_encode($erro));
             }
             

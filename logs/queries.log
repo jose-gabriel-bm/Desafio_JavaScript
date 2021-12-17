@@ -17553,3 +17553,1501 @@
             WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
 2021-12-17 12:35:25 Debug: duration=64 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
 2021-12-17 12:35:25 Debug: duration=47 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 12:39:59 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 12:39:59 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 12:39:59 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 12:39:59 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 12:39:59 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 12:40:02 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 12:40:02 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 12:40:02 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 12:40:02 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 12:40:02 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 12:40:02 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 12:40:20 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 15 LIMIT 1
+2021-12-17 12:40:20 Debug: duration=0 rows=0 BEGIN
+2021-12-17 12:40:20 Debug: duration=0 rows=1 UPDATE clientes SET status = 0 , modified = '2021-12-17 12:40:20' WHERE id = 15
+2021-12-17 12:40:20 Debug: duration=0 rows=0 COMMIT
+2021-12-17 12:40:20 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 12:40:20 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 12:40:21 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 12:40:21 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 12:40:23 Debug: duration=3 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 12:40:24 Debug: duration=1146 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 12:40:24 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 12:40:24 Debug: duration=109 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 12:40:24 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 12:40:24 Debug: duration=243 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 12:40:24 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 12:40:24 Debug: duration=53 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 12:40:24 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 16 LIMIT 1
+2021-12-17 12:40:24 Debug: duration=84 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (16)
+2021-12-17 12:40:24 Debug: duration=95 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (16)
+2021-12-17 12:40:27 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 12:40:27 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 12:40:29 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 16 LIMIT 1
+2021-12-17 12:40:29 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (16)
+2021-12-17 12:40:29 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (16)
+2021-12-17 12:40:29 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 16 LIMIT 1
+2021-12-17 12:40:38 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 16 LIMIT 1
+2021-12-17 12:40:38 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (16)
+2021-12-17 12:40:38 Debug: duration=0 rows=2 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (16)
+2021-12-17 12:40:38 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 16 LIMIT 1
+2021-12-17 12:40:38 Debug: duration=0 rows=0 BEGIN
+2021-12-17 12:40:38 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.email = 'murilojose@outlook.com' AND NOT (Clientes.id = 16)) LIMIT 1
+2021-12-17 12:40:38 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE (Clientes.cpf = '02459055102' AND NOT (Clientes.id = 16)) LIMIT 1
+2021-12-17 12:40:38 Debug: duration=0 rows=1 UPDATE clientes SET nome = 'Murilo jose da Silva' , cpf = '02459055102' , email = 'murilojose@outlook.com' , status = 0 , modified = '2021-12-17 12:40:38' WHERE id = 16
+2021-12-17 12:40:38 Debug: duration=0 rows=0 COMMIT
+2021-12-17 12:40:38 Debug: duration=0 rows=0 BEGIN
+2021-12-17 12:40:38 Debug: duration=0 rows=0 UPDATE enderecos SET logradouro = 'Rua 08' , numero = '66' , complemento = '' , bairro = 'Polo Empresarial Goiás - Etapa X' , cep = '74985216' WHERE id = 16
+2021-12-17 12:40:38 Debug: duration=0 rows=0 COMMIT
+2021-12-17 12:40:38 Debug: duration=99 rows=2 DELETE FROM contatos WHERE id in (69,70)
+2021-12-17 12:40:38 Debug: duration=0 rows=0 BEGIN
+2021-12-17 12:40:38 Debug: duration=55 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (16, '55', '62', '93410877')
+2021-12-17 12:40:38 Debug: duration=0 rows=0 COMMIT
+2021-12-17 12:40:40 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 12:40:40 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 12:40:45 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 16 LIMIT 1
+2021-12-17 12:40:45 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (16)
+2021-12-17 12:40:45 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (16)
+2021-12-17 12:40:48 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 12:40:48 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 12:41:05 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 12:41:16 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 12:41:16 Debug: duration=140 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 12:41:16 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 12:41:16 Debug: duration=86 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 12:41:16 Debug: duration=127 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 12:41:21 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 12:41:25 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:06:18 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:06:18 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:06:18 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:06:18 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:06:18 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:06:26 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:06:26 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:06:26 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:06:26 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:06:26 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:08:05 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:08:20 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:10:10 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:10:10 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:10:10 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:10:10 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:10:10 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:10:17 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:10:17 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:10:17 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:10:17 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:10:17 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:10:39 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:10:49 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:11:10 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:11:16 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:11:21 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:11:27 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:11:33 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:11:47 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:11:51 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:12:12 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:12:23 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:12:23 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:12:23 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:12:23 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:12:23 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:12:29 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:12:29 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:12:29 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:12:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:12:29 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:12:48 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:15:00 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:15:00 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:15:00 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:15:00 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:15:00 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:15:22 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:15:29 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:15:29 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:15:29 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:15:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:15:29 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:16:19 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:16:28 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:16:50 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:16:56 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:17:12 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:17:12 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:17:12 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:17:12 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:17:12 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:17:20 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:17:43 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:17:51 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:17:51 Debug: duration=3 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:17:51 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:17:51 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:17:51 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:18:02 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:18:13 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:18:48 Debug: duration=3 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:18:54 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:19:47 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:19:47 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:19:47 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:19:47 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:19:47 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:19:57 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:19:57 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:19:57 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:19:57 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:19:57 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:21:23 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:21:31 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:22:56 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:22:56 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:22:56 Debug: duration=4 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:22:56 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:22:56 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:23:06 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:23:06 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:23:06 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:23:06 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:23:06 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:28:38 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:28:38 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:28:38 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:28:38 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:28:38 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:28:44 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:28:44 Debug: duration=4 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:28:44 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:28:44 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:28:44 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:28:48 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:29:04 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:29:11 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:32:33 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:32:33 Debug: duration=3 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:32:33 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:32:33 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:32:33 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:32:44 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:32:44 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:32:44 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:32:44 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:32:44 Debug: duration=3 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:34:48 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:34:48 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:34:48 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:34:48 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:34:48 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:34:57 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:34:57 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:34:57 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:34:57 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:34:57 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:36:18 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:36:26 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:36:49 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:36:49 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:36:49 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:36:49 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:36:49 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:36:56 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:45:09 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:45:09 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:45:09 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:45:09 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:45:09 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:45:32 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:45:40 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:45:40 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:45:40 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:45:40 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:45:40 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:46:11 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:46:18 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:47:00 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:47:05 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:47:46 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:47:46 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:47:46 Debug: duration=5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:47:46 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:47:46 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:47:51 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:47:51 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:47:52 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:47:52 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:47:52 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:48:53 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:49:00 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:51:03 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:51:03 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:51:03 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:51:03 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:51:03 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:51:11 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:51:11 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:51:11 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:51:11 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:51:11 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:55:40 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:55:40 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:55:40 Debug: duration=4 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:55:40 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:55:40 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:55:48 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:55:48 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:55:48 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:55:48 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:55:48 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:56:45 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:56:53 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:57:32 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:57:40 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:59:20 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 13:59:20 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 13:59:20 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 13:59:20 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 13:59:20 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 13:59:27 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 13:59:27 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 13:59:27 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 13:59:27 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 13:59:27 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 13:59:38 Debug: duration=1 rows=16 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 4
+2021-12-17 13:59:45 Debug: duration=1 rows=16 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 4
+2021-12-17 13:59:58 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:00:07 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:02:10 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:02:10 Debug: duration=4 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:02:10 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:02:10 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:02:10 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:02:20 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:02:20 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:02:20 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:02:20 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:02:20 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:14:48 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:14:48 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:14:48 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:14:48 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:14:48 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:14:54 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:14:54 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:14:54 Debug: duration=10 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:14:54 Debug: duration=4 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:14:54 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:16:21 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:16:27 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:21:29 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:21:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:21:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:21:29 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:21:29 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:21:34 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:21:34 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:21:34 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:21:34 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:21:34 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:22:05 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:22:10 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:25:17 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:25:17 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:25:17 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:25:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:25:17 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:25:23 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:25:23 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:25:23 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:25:23 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:25:23 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:26:21 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:26:25 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:26:29 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:26:50 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:27:10 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:33:42 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:33:42 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:33:42 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:33:42 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:33:42 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:33:43 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:33:43 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:33:43 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:33:43 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:33:43 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:33:49 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:38:17 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:38:17 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:38:17 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:38:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:38:17 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:38:23 Debug: duration=3 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:38:23 Debug: duration=4 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:38:23 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:38:23 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:38:23 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:42:35 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:42:35 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:42:35 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:42:35 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:42:35 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:42:43 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:42:43 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:42:43 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:42:43 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:42:43 Debug: duration=1 rows=184 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 6
+2021-12-17 14:42:48 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:43:51 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:43:56 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:47:51 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:47:51 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:47:51 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:47:51 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:47:51 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:47:56 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:47:56 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:47:56 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:47:56 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:47:56 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:49:42 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:49:49 Debug: duration=1 rows=78 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 8
+2021-12-17 14:50:11 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:50:11 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:50:11 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:50:11 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:50:11 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:50:18 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:50:33 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:51:27 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:51:28 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:51:28 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:51:28 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:51:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:51:28 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:51:37 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:51:57 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:52:07 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:52:15 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:52:15 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:52:15 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:52:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:52:15 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:52:59 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:53:06 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:53:35 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:53:35 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:53:35 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:53:35 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:53:35 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:53:43 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:53:46 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:54:01 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:54:10 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:54:25 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:54:33 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:54:33 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:54:33 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:54:33 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:54:33 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 7
+2021-12-17 14:54:38 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 14:57:34 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 14:57:34 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 14:57:34 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 14:57:34 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 14:57:34 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 14:57:40 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 14:57:40 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 14:57:40 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 14:57:40 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 14:57:40 Debug: duration=1 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 7
+2021-12-17 14:57:45 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 15:12:01 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 15:12:01 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 15:12:01 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 15:12:01 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 15:12:01 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 15:57:46 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 15:57:46 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 15:57:46 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 15:57:46 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 15:57:46 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 15:58:07 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 15:58:07 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 15:58:07 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 15:58:07 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 15:58:07 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 15:58:14 Debug: duration=0 rows=0 BEGIN
+2021-12-17 15:58:14 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 15:58:14 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 15:58:14 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 15:58:14 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 15:58:14 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 15:58:14 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 15:58:14 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 15:58:14', '2021-12-17 15:58:14')
+2021-12-17 15:58:14 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:01:03 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:01:03 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:01:03 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:01:03 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:01:03 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:01:03 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:01:03 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:01:03 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:01:03 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:01:03 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:01:03 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:01:03 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:01:03', '2021-12-17 16:01:03')
+2021-12-17 16:01:03 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:01:07 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:06:42 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:06:42 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:06:42 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:06:42 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:06:42 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:07:13 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:07:13 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:07:13 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:07:13 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:07:13 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:07:33 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:07:33 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:07:33 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:07:33 Debug: duration=4 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:07:33 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:07:33 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:07:33 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:07:33 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:07:33', '2021-12-17 16:07:33')
+2021-12-17 16:07:33 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:07:43 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:07:54 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:08:01 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:08:02 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:08:02 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:08:02 Debug: duration=1 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:08:02', '2021-12-17 16:08:02')
+2021-12-17 16:08:02 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:08:31 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:08:31 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:08:31 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:08:31 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:08:31', '2021-12-17 16:08:31')
+2021-12-17 16:08:31 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:08:32 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:10:45 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:10:45 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:10:45 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:10:45 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:10:45 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:11:01 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:11:01 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:11:01 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:11:01 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:11:01 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:11:05 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 7
+2021-12-17 16:11:07 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:11:07 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:11:07 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:11:07 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:11:07 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:11:07 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:11:07 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:11:07 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:11:07', '2021-12-17 16:11:07')
+2021-12-17 16:11:07 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:11:31 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:11:31 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:11:31 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:11:31 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:11:31', '2021-12-17 16:11:31')
+2021-12-17 16:11:31 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:13:03 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:13:03 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:13:03 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:13:03 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:13:03 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:13:05 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:13:17 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:13:17 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:13:17 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:13:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:13:17 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:13:27 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:13:27 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:13:27 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:13:27 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:13:27 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:13:27 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:13:27 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:13:27 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:13:27', '2021-12-17 16:13:27')
+2021-12-17 16:13:27 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:13:57 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:13:58 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 16:13:58 Debug: duration=6 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 16:14:00 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:15:14 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:15:14 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:15:14 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:15:14 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:15:14 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:15:26 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:15:26 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:15:26 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:15:26 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:15:26 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:15:34 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:19:31 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:19:31 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:19:31 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:19:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:19:31 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:21:07 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:21:20 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:21:20 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:21:20 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:21:20 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:21:20 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:21:28 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:21:28 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:21:28 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:21:28 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:21:28 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:21:28 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:21:28 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:21:28 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:21:28', '2021-12-17 16:21:28')
+2021-12-17 16:21:28 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:22:29 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:22:29 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:22:29 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:22:29 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:22:29 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:22:42 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:22:42 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:22:42 Debug: duration=4 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:22:42 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:22:42', '2021-12-17 16:22:42')
+2021-12-17 16:22:42 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:23:28 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:23:40 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:23:40 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:23:40 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:23:40 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:23:40 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:23:40 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:23:40 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:23:40 Debug: duration=1 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:23:40', '2021-12-17 16:23:40')
+2021-12-17 16:23:40 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:23:49 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:23:51 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:24:03 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:24:03 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:24:03 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:24:03 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:24:03 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:24:17 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:24:17 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:24:17 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:24:17 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:24:17', '2021-12-17 16:24:17')
+2021-12-17 16:24:17 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:26:49 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:26:49 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:26:49 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:26:49 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:26:49 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:26:49 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:26:49 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:26:49 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:26:49 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:26:49 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:26:49 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:26:49 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:26:49', '2021-12-17 16:26:49')
+2021-12-17 16:26:49 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:26:52 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:26:56 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:27:09 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:27:09 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:27:09 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:27:09 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:27:09 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:27:15 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:27:15 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:27:15 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:27:15 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:27:15', '2021-12-17 16:27:15')
+2021-12-17 16:27:15 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:29:18 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:29:18 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:29:18 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:29:18 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:29:18 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:29:20 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:29:32 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:29:32 Debug: duration=4 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:29:32 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:29:32 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:29:32 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:29:36 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:29:36 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:29:36 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:29:36 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:29:36 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:29:36 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:29:36 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:29:36 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:29:36', '2021-12-17 16:29:36')
+2021-12-17 16:29:36 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:29:53 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:32:17 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:32:17 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:32:17 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:32:17 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:32:17 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:32:30 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:32:30 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:32:30 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:32:30 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:32:30 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:32:36 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:32:36 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:32:36 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:32:36 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:32:36 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:32:36 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:32:36 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:32:36 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:32:36', '2021-12-17 16:32:36')
+2021-12-17 16:32:36 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:33:15 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:33:18 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:33:28 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:33:33 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:33:33 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = NULL LIMIT 1
+2021-12-17 16:33:33 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = NULL LIMIT 1
+2021-12-17 16:33:33 Debug: duration=0 rows=0 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES (NULL, NULL, NULL, '2021-12-17 16:33:33', '2021-12-17 16:33:33')
+2021-12-17 16:33:33 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:34:40 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:34:40 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:34:40 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:34:40 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:34:40 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:34:42 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:34:54 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:34:54 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:34:54 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:34:54 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:34:54 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:35:14 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:35:28 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:36:44 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:36:44 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:36:44 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:36:44 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:36:44 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:36:48 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:37:01 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:37:01 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:37:01 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:37:01 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:37:01 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:37:05 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:38:36 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:38:48 Debug: duration=2 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:38:50 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:38:50 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:38:50 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:38:50 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:38:50 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:38:54 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:38:57 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:38:57 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:38:57 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:38:57 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:38:57 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 16:38:57 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 16:39:01 Debug: duration=0 rows=6 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 10
+2021-12-17 16:39:01 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 16:39:06 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 16:39:06 Debug: duration=2 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 16:43:49 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:43:49 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:43:49 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:43:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:43:49 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 16:43:49 Debug: duration=9 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 16:43:50 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:43:50 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:43:50 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:43:50 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:43:50 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:44:03 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:44:03 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:44:03 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:44:03 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:44:03 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:44:52 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:45:09 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:45:38 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:45:53 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:46:30 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:46:30 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:46:30 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:46:30 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:46:30 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:46:44 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:46:44 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:46:44 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:46:44 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:46:44 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:46:58 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:46:58 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:46:58 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:46:58 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:46:58 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:46:58 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'josegabrielbm@outlook.com' LIMIT 1
+2021-12-17 16:46:58 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05870055130' LIMIT 1
+2021-12-17 16:46:58 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:47:35 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:47:35 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'josegabrielbm@outlook.com' LIMIT 1
+2021-12-17 16:47:35 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05870055130' LIMIT 1
+2021-12-17 16:47:35 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:49:20 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:49:20 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:49:20 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:49:20 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:49:20 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:49:33 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 16:49:33 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 16:49:33 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 16:49:33 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 16:49:33 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 16:49:41 Debug: duration=0 rows=0 BEGIN
+2021-12-17 16:49:41 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 16:49:41 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 16:49:41 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 16:49:41 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 16:49:41 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'josegabrielbm@outlook.com' LIMIT 1
+2021-12-17 16:49:41 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '05870055130' LIMIT 1
+2021-12-17 16:49:41 Debug: duration=0 rows=0 ROLLBACK
+2021-12-17 16:50:38 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:58:55 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 16:58:55 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 16:58:55 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 16:58:55 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 16:58:55 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 16:59:38 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:00:18 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 17:00:18 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 17:00:18 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 17:00:18 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 17:00:18 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 17:00:28 Debug: duration=0 rows=0 BEGIN
+2021-12-17 17:00:28 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 17:00:28 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 17:00:28 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 17:00:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 17:00:28 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.email = 'isaque@outlook.com' LIMIT 1
+2021-12-17 17:00:28 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM clientes Clientes WHERE Clientes.cpf = '91582158088' LIMIT 1
+2021-12-17 17:00:28 Debug: duration=0 rows=1 INSERT INTO clientes (nome, cpf, email, created, modified) VALUES ('Isaque David Pereira', '91582158088', 'isaque@outlook.com', '2021-12-17 17:00:28', '2021-12-17 17:00:28')
+2021-12-17 17:00:28 Debug: duration=0 rows=0 COMMIT
+2021-12-17 17:00:28 Debug: duration=0 rows=0 BEGIN
+2021-12-17 17:00:28 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 17:00:28 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 17:00:28 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 17:00:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 17:00:28 Debug: duration=1 rows=1 INSERT INTO enderecos (id_cliente, id_cidade, logradouro, numero, complemento, bairro, cep) VALUES (17, 1128, 'Rua Brasil', '35', '', 'Setor Bueno', '74215070')
+2021-12-17 17:00:28 Debug: duration=0 rows=0 COMMIT
+2021-12-17 17:00:28 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 17:00:28 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 17:00:28 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 17:00:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 17:00:28 Debug: duration=0 rows=0 BEGIN
+2021-12-17 17:00:28 Debug: duration=0 rows=1 INSERT INTO contatos (id_cliente, codigo_pais, ddd, numero) VALUES (17, '55', '62', '93410844')
+2021-12-17 17:00:28 Debug: duration=0 rows=0 COMMIT
+2021-12-17 17:00:28 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:00:30 Debug: duration=1 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 17:00:30 Debug: duration=3 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 17:00:33 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:00:33 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:00:33 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:00:37 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 17:00:37 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 17:00:51 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 17:00:51 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 17:00:54 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 17:00:54 Debug: duration=2 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 17:00:59 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 17:00:59 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 17:08:58 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 17:08:58 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 17:08:58 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 17:08:58 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 17:08:58 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados

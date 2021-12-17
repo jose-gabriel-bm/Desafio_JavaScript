@@ -1,6 +1,6 @@
 <div class="mensagem" id="mensagem"></div>
 
-<div>    <form method="post" action="/clientes/adicionar" id="formulario" name="formulario">
+<div>    <form id="formulario" name="formulario">
 
         <ul id="progress">
             <li class="ativo">Dados Pessoais</li>
