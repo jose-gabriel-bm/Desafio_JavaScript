@@ -19051,3 +19051,1128 @@
             WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
 2021-12-17 17:08:58 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
 2021-12-17 17:08:58 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:14:33 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 17:14:33 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 17:14:33 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 17:14:33 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 17:14:33 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:14:34 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:14:36 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 17:14:36 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 17:14:36 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 17:14:36 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 17:14:36 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 17:14:36 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 17:14:38 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 17:14:38 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 17:14:38 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 17:14:38 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 17:14:38 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 17:14:38 Debug: duration=2 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 17:14:38 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 17:14:38 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 17:14:38 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:14:38 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:14:38 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:14:38 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:15:52 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:15:52 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:15:52 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:15:52 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:15:52 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:19:23 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 17:19:23 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 17:19:23 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 17:19:23 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 17:19:23 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 17:19:23 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 17:19:23 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 17:19:23 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 17:19:23 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 17:19:23 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 17:19:23 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 17:19:23 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 17:19:23 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 17:19:23 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 17:19:23 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 17:19:23 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 17:19:23 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:19:23 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:19:23 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:19:23 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:19:23 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:29:00 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 17:29:00 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 17:29:00 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 17:29:00 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 17:29:00 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 17:29:00 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 17:29:00 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 17:29:00 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 17:29:00 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 17:29:00 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 17:29:00 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 17:29:00 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 17:29:00 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 17:29:00 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 17:29:00 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 17:29:00 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 17:29:00 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:29:00 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:29:00 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:29:00 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:29:00 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:55:05 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 17:55:05 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 17:55:05 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 17:55:05 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 17:55:05 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 17:55:05 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 17:55:05 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 17:55:05 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 17:55:05 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 17:55:05 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 17:55:05 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 17:55:05 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 17:55:05 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 17:55:05 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 17:55:05 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 17:55:05 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 17:55:05 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:55:05 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:55:05 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:55:05 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:55:05 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:55:32 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:55:32 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:55:32 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:55:32 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:55:32 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:55:48 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:55:48 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:55:48 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:55:48 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:55:48 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:56:15 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:56:15 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:56:15 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:56:15 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:56:15 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 17:57:46 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 17:57:46 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 17:57:46 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 17:57:46 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 17:57:46 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 17:57:46 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 17:57:46 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 17:57:46 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 17:57:46 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 17:57:46 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 17:57:46 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 17:57:46 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 17:57:46 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 17:57:46 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 17:57:46 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 17:57:46 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 17:57:46 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:57:46 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:57:46 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:57:46 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:57:46 Debug: duration=0 rows=0 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados WHERE Estados.id = 1128 LIMIT 1
+2021-12-17 17:58:07 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:58:07 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:58:07 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:58:07 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:58:07 Debug: duration=0 rows=0 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados WHERE Estados.id = 1128 LIMIT 1
+2021-12-17 17:58:42 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:58:42 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:58:42 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:58:42 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 17:59:50 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 17:59:50 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 17:59:50 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 17:59:50 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 17:59:50 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 17:59:50 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 17:59:50 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 17:59:50 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 17:59:50 Debug: duration=3 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 17:59:50 Debug: duration=3 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 17:59:50 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 17:59:50 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 17:59:50 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 17:59:50 Debug: duration=2 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 17:59:50 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 17:59:50 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 17:59:50 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 17:59:50 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 17:59:50 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 17:59:50 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:01:03 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:01:03 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:01:03 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:01:03 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:01:15 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:01:15 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:01:15 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:01:15 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:02:17 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:02:17 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:02:17 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:02:17 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:02:17 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:02:17 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:02:17 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:02:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:02:17 Debug: duration=3 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:02:17 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:02:17 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:02:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:02:17 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:02:17 Debug: duration=2 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:02:17 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:02:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:02:17 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:02:17 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:02:17 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:02:17 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:02:17 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:02:17 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:02:17 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:02:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:02:17 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE Cidades.id = 1128 LIMIT 1
+2021-12-17 18:02:17 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:04:28 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:04:28 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:04:28 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:04:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:04:28 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:04:28 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:04:28 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:04:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:04:28 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:04:28 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:04:28 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:04:28 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:04:28 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:04:28 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:04:28 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:04:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:04:28 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:04:28 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:04:28 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:04:28 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:04:28 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:04:28 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:04:28 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:04:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:04:28 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE Cidades.id = 1128 LIMIT 1
+2021-12-17 18:04:28 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:16:26 Debug: duration=6 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:16:26 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:16:26 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:16:26 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:16:26 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:16:26 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:16:26 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:16:26 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:16:26 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:16:26 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:16:26 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:16:26 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:16:26 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:16:26 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:16:26 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:16:26 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:16:26 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:16:26 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:16:26 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:16:26 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:16:26 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:16:26 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:16:26 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:16:26 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:19:14 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:19:14 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:19:14 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:19:14 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:19:14 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:19:14 Debug: duration=3 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:19:14 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:19:14 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:19:14 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:19:14 Debug: duration=3 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:19:14 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:19:14 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:19:14 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:19:14 Debug: duration=3 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:19:14 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:19:14 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:19:14 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:19:14 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:19:14 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:19:14 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:19:14 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:19:14 Debug: duration=3 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:19:14 Debug: duration=3 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:19:14 Debug: duration=4 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:19:14 Debug: duration=1 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 1128 LIMIT 1
+2021-12-17 18:19:14 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:19:45 Debug: duration=1 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:19:45 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:19:45 Debug: duration=1 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:19:45 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:19:45 Debug: duration=1 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 1128 LIMIT 1
+2021-12-17 18:19:45 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:22:17 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:22:17 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:22:17 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:22:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:22:17 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:22:17 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:22:17 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:22:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:22:17 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:22:17 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:22:17 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:22:17 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:22:17 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:22:17 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:22:17 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:22:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:22:17 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:22:17 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:22:17 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:22:17 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:22:17 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:22:17 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:22:17 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:22:17 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:22:17 Debug: duration=1 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 1128 LIMIT 1
+2021-12-17 18:22:17 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:23:38 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:23:38 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:23:38 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:23:38 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:23:38 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 1128 LIMIT 1
+2021-12-17 18:23:38 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:25:32 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:25:32 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:25:32 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:25:32 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:25:32 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:25:32 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:25:32 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:25:32 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:25:32 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:25:32 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:25:32 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:25:32 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:25:32 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:25:32 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:25:32 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:25:32 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:25:32 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:25:32 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:25:32 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:25:32 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:25:32 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:25:32 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:25:32 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:25:32 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:25:32 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:25:32 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:28:35 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:28:35 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:28:35 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:28:35 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:28:35 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:28:35 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:28:35 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:28:35 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:28:35 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:28:35 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:28:35 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:28:35 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:28:35 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:28:35 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:28:35 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:28:35 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:28:35 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:28:35 Debug: duration=2 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:28:35 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:28:35 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:28:35 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:28:35 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:28:35 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:28:35 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:28:35 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:28:35 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:28:35 Debug: duration=5 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:29:01 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:29:01 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:29:01 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:29:01 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:29:01 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:29:01 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:29:01 Debug: duration=6 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:29:17 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 18:29:17 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 18:29:22 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:29:33 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:32:23 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:32:23 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:32:23 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:32:23 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:32:23 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:32:39 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:32:39 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:32:39 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:32:39 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:32:39 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 7
+2021-12-17 18:32:59 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:33:14 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 7
+2021-12-17 18:33:18 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:33:22 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:36:29 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:36:29 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:36:29 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:36:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:36:29 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:36:31 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:36:31 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:36:31 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:36:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:36:31 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 18:36:31 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 18:36:34 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:36:34 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:36:34 Debug: duration=4 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:36:34 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:36:34 Debug: duration=3 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:36:34 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:36:34 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:36:34 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:36:34 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:36:34 Debug: duration=2 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:36:34 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:36:34 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:36:34 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:36:34 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:36:34 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:36:34 Debug: duration=1 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:36:34 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:36:34 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:36:34 Debug: duration=5 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:37:21 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:37:21 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:37:21 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:37:21 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:37:21 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:37:21 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:37:21 Debug: duration=6 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:38:31 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:38:31 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:38:31 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:38:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:38:31 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:38:31 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:38:31 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:38:31 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:38:31 Debug: duration=1 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:38:31 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:38:31 Debug: duration=4 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:38:36 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:38:36 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:38:36 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:38:36 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:38:36 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:38:36 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:38:36 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:38:36 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:38:36 Debug: duration=3 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:38:36 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:38:36 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:38:36 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:38:37 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:38:37 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:38:37 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:38:37 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:38:37 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:38:37 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:38:37 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:38:37 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:38:37 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:38:37 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:38:37 Debug: duration=4 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:41:03 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:41:03 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:41:03 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:41:03 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:41:03 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:41:03 Debug: duration=2 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:41:03 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:41:03 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:41:03 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:41:03 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:41:03 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:41:03 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:41:03 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:41:03 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:41:03 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:41:03 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:41:03 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:41:03 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:41:03 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:41:03 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:41:03 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:41:03 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:41:03 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:41:03 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:41:03 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:41:03 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:41:03 Debug: duration=5 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:41:10 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:41:10 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:41:10 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:41:10 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:41:10 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:41:10 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:41:10 Debug: duration=6 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:41:12 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:41:12 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:41:12 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:41:12 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:41:12 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:41:12 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:41:12 Debug: duration=4 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:41:39 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:41:39 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:41:39 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:41:39 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:41:39 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:41:39 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:41:39 Debug: duration=7 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:42:54 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:42:54 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:42:54 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:42:54 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:42:54 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:42:54 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:42:54 Debug: duration=7 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:43:06 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:43:06 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:43:06 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:43:06 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:43:06 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:43:06 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:43:06 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:43:06 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:43:06 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:43:06 Debug: duration=1 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:43:06 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:43:06 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:43:06 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:43:06 Debug: duration=2 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:43:06 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:43:06 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:43:06 Debug: duration=1 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:43:06 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:43:06 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:43:06 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:43:09 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:43:09 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:43:09 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:43:09 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:43:09 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:43:09 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:43:09 Debug: duration=5 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades
+2021-12-17 18:43:14 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 18:43:14 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 18:43:16 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:43:33 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:43:37 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:44:14 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:44:16 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:44:34 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:44:42 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:45:02 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:45:28 Debug: duration=2 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:45:28 Debug: duration=1 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:45:28 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:45:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:45:28 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:45:39 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:45:39 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:45:39 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:45:39 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:45:39 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:45:46 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 7
+2021-12-17 18:45:49 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:45:57 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:46:11 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:46:15 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:46:18 Debug: duration=1 rows=246 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 9
+2021-12-17 18:46:31 Debug: duration=1 rows=223 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 15
+2021-12-17 18:47:13 Debug: duration=1 rows=141 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 13
+2021-12-17 18:47:27 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 7
+2021-12-17 18:47:29 Debug: duration=1 rows=143 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 14
+2021-12-17 18:47:31 Debug: duration=0 rows=22 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades WHERE id_estado = 1
+2021-12-17 18:47:57 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `estados`
+2021-12-17 18:47:57 Debug: duration=2 rows=1 SHOW INDEXES FROM `estados`
+2021-12-17 18:47:57 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'estados' AND rc.TABLE_NAME = 'estados'
+2021-12-17 18:47:57 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'estados'
+2021-12-17 18:47:57 Debug: duration=0 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:47:59 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `clientes`
+2021-12-17 18:47:59 Debug: duration=2 rows=2 SHOW INDEXES FROM `clientes`
+2021-12-17 18:47:59 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'clientes' AND rc.TABLE_NAME = 'clientes'
+2021-12-17 18:47:59 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'clientes'
+2021-12-17 18:47:59 Debug: duration=0 rows=10 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes ORDER BY Clientes.id Desc LIMIT 10 OFFSET 0
+2021-12-17 18:47:59 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM clientes Clientes
+2021-12-17 18:48:02 Debug: duration=1 rows=3 SHOW FULL COLUMNS FROM `cidades`
+2021-12-17 18:48:02 Debug: duration=1 rows=2 SHOW INDEXES FROM `cidades`
+2021-12-17 18:48:02 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'cidades' AND rc.TABLE_NAME = 'cidades'
+2021-12-17 18:48:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'cidades'
+2021-12-17 18:48:02 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `enderecos`
+2021-12-17 18:48:02 Debug: duration=1 rows=3 SHOW INDEXES FROM `enderecos`
+2021-12-17 18:48:02 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'enderecos' AND rc.TABLE_NAME = 'enderecos'
+2021-12-17 18:48:02 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'enderecos'
+2021-12-17 18:48:02 Debug: duration=2 rows=5 SHOW FULL COLUMNS FROM `contatos`
+2021-12-17 18:48:02 Debug: duration=1 rows=2 SHOW INDEXES FROM `contatos`
+2021-12-17 18:48:02 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'desafio_javascript' AND kcu.TABLE_NAME = 'contatos' AND rc.TABLE_NAME = 'contatos'
+2021-12-17 18:48:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'contatos'
+2021-12-17 18:48:02 Debug: duration=0 rows=1 SELECT Clientes.id AS `Clientes__id`, Clientes.nome AS `Clientes__nome`, Clientes.cpf AS `Clientes__cpf`, Clientes.email AS `Clientes__email`, Clientes.status AS `Clientes__status`, Clientes.created AS `Clientes__created`, Clientes.modified AS `Clientes__modified` FROM clientes Clientes WHERE Clientes.id = 17 LIMIT 1
+2021-12-17 18:48:02 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id_cliente in (17)
+2021-12-17 18:48:02 Debug: duration=0 rows=1 SELECT Contatos.id AS `Contatos__id`, Contatos.id_cliente AS `Contatos__id_cliente`, Contatos.codigo_pais AS `Contatos__codigo_pais`, Contatos.ddd AS `Contatos__ddd`, Contatos.numero AS `Contatos__numero` FROM contatos Contatos WHERE Contatos.id_cliente in (17)
+2021-12-17 18:48:02 Debug: duration=0 rows=1 SELECT Enderecos.id AS `Enderecos__id`, Enderecos.id_cliente AS `Enderecos__id_cliente`, Enderecos.id_cidade AS `Enderecos__id_cidade`, Enderecos.logradouro AS `Enderecos__logradouro`, Enderecos.numero AS `Enderecos__numero`, Enderecos.complemento AS `Enderecos__complemento`, Enderecos.bairro AS `Enderecos__bairro`, Enderecos.cep AS `Enderecos__cep` FROM enderecos Enderecos WHERE Enderecos.id = 17 LIMIT 1
+2021-12-17 18:48:02 Debug: duration=0 rows=1 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome`, Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM cidades Cidades INNER JOIN estados Estados ON Estados.id = (Cidades.id_estado) WHERE Cidades.id = 977 LIMIT 1
+2021-12-17 18:48:02 Debug: duration=1 rows=27 SELECT Estados.id AS `Estados__id`, Estados.nome AS `Estados__nome`, Estados.uf AS `Estados__uf` FROM estados Estados
+2021-12-17 18:48:02 Debug: duration=6 rows=5564 SELECT Cidades.id AS `Cidades__id`, Cidades.id_estado AS `Cidades__id_estado`, Cidades.nome AS `Cidades__nome` FROM cidades Cidades

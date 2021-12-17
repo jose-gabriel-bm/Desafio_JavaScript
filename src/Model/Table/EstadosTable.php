@@ -14,6 +14,10 @@ class EstadosTable extends Table
         $this->setTable('estados');
         $this->setDisplayField('uf');
         $this->setPrimaryKey('id');
+
+        $this->hasMany('Cidades', [
+            'foreignKey' => 'id_estado',
+        ]);
     }
 
     public function validationDefault(Validator $validator)

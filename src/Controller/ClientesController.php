@@ -98,13 +98,21 @@ class ClientesController extends AppController
     }
     public function edit($id = null)
     {
+        $this->loadModel('Estados');
+        $this->loadModel('Cidades');
         $this->loadModel('Enderecos');
         $this->loadModel('Contatos');
+        $estados = $this->Estados->find();
+        $cidades = $this->Cidades->find();
+
         $cliente = $this->Clientes->get($id, [
             'contain' => ['Enderecos', 'Contatos'],
         ]);
+ 
         $id_endereco = $cliente->enderecos[0]->id;
         $endereco = $this->Enderecos->get($id_endereco);
+
+        $this->buscarEstadoCliente($endereco);
 
         if ($this->request->is(['patch', 'post', 'put'])) {
             $dados = $this->request->getData();
@@ -170,9 +178,19 @@ class ClientesController extends AppController
         }             
 
         }
+        $this->set(compact('cliente', 'estados','cidades'));
+    }
+    public function buscarEstadoCliente($endereco){
 
-        $this->set('cliente', $cliente);
+        $this->loadModel('Cidades');
+        $this->loadModel('Estados');
 
+        $id_cidade = $endereco['id_cidade'];
+        $cidade = $this->Cidades->get($id_cidade, [
+            'contain' => ['Estados'],
+        ]);
+
+        $this->set(compact('cidade'));
     }
 
     public function buscaIndex($busca)

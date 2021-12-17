@@ -232,10 +232,9 @@ function selecionarCidades(cidade){
 
     option.setAttributeNode(value);
 
+    if(cidade != ''){
 
-    if(cidade){
-
-        if(respost.nome = cidade){
+        if(respost.nome == cidade){
 
             let selected = document.createAttribute('selected');
             selected.value = true;

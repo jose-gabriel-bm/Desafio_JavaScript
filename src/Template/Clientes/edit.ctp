@@ -48,6 +48,19 @@
             <h3>Endereço</h3>
 
             <input type="text" value="<?php echo $cliente['enderecos']['0']['cep']?>" id="cep"  placeholder="CEP:"></input>
+
+            <select name="estado" id="estado" onchange="selecionarCidades()">
+                <option value="<?= $cidade['id_estado']?>" id="<?= $cidade['id_estado']?>"><?= $cidade['estado']['uf']?></option>
+
+                <?php foreach($estados as $estado):?>
+                   <option value="<?= $estado->id?>" id="<?= $estado->uf?>"><?= $estado->uf?></option>
+                <?php endforeach;?>
+            </select>
+
+            <select name="cidade" id="cidade" >
+                <option value="<?= $cidade['id']?>"><?= $cidade['nome']?></option>
+            </select>
+
             <input type="text" value="<?php echo $cliente['enderecos']['0']['logradouro']?>" id="logradouro" placeholder="Logradouro:Rua ,Lote ,Quadra " ></input>
             <input type="text" value="<?php echo $cliente['enderecos']['0']['bairro']?>" id="bairro" placeholder="bairro:" ></input>
             <input type="text" value="<?php echo $cliente['enderecos']['0']['numero']?>" id="nCasa" placeholder="Numero:"></input>

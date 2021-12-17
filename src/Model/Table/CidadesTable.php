@@ -14,6 +14,14 @@ class CidadesTable extends Table
         $this->setTable('cidades');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->belongsTo('Estados', [
+            'foreignKey' => 'id_estado',
+            'joinType' => 'INNER',
+        ]);
+        $this->hasMany('Enderecos', [
+            'foreignKey' => 'id_cidade',
+        ]);
     }
 
     public function validationDefault(Validator $validator)

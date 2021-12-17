@@ -1,3 +1,40 @@
+function selecionarCidades(){
+    var idEstado = document.getElementById("estado").value;
+        
+    $.ajax({
+        type: 'POST',
+        url: 'selecionarcidade',
+        dataType: 'json',
+        data: { idEstado },
+        beforeSend: function () {
+        },
+        success: function (resposta) {
+            if(resposta){
+                let elementoReferencia = document.getElementById('cidade');
+                elementoReferencia.innerText = "";
+
+                resposta.map(function(respost, i) {                   
+                    criacaoOptionsCidades(elementoReferencia,respost);
+                })
+            }
+        }
+    });
+    
+}
+
+function criacaoOptionsCidades(elementoReferencia,respost){
+     
+    let option = document.createElement("option");
+
+    let value = document.createAttribute('value');
+    value.value = respost.id;
+
+    option.setAttributeNode(value);
+      
+    option.text = respost.nome;
+    elementoReferencia.appendChild(option);
+
+}
 function salvarDados(){
 
     var contatos = document.getElementsByClassName('contatoEdit');
