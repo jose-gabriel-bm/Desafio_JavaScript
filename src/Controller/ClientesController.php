@@ -20,9 +20,13 @@ class ClientesController extends AppController
         $this->buscaIndex($busca);
     }
     public function adicionar()
-    {
+    {      
+
+        $this->loadModel('Estados');
         $this->loadModel('Contatos');
         $this->loadModel('Enderecos');
+
+        $estados = $this->Estados->find();
         $entityDadosPessoais = $this->Clientes->newEntity();
         $entityEndereco = $this->Enderecos->newEntity();
 
@@ -81,6 +85,8 @@ class ClientesController extends AppController
             }
             
         }
+        $this->set(compact('estados'));
+
     }
 
     public function view($id)
@@ -216,5 +222,18 @@ class ClientesController extends AppController
         $this->Clientes->save($cliente);
         return $this->redirect(['action' => 'index']);
         }
+    }
+    public function selecionarcidade(){
+        if ($this->request->is(['patch', 'post', 'put'])) {
+
+            $id_estado = $this->request->getData();
+            $teste = json_decode($id_estado['idEstado']);
+
+            $this->loadModel('Cidades');
+            $cidades = $this->Cidades->find();
+            $cidades = $cidades->where(['id_estado =' =>$teste]);
+
+            return $this->response->withType("application/json")->withStringBody(json_encode($cidades));
+        }         
     }
 }

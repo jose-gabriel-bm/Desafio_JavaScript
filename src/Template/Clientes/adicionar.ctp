@@ -1,7 +1,6 @@
 <div class="mensagem" id="mensagem"></div>
 
-<div>
-    <form method="post" action="/clientes/adicionar" id="formulario" name="formulario">
+<div>    <form method="post" action="/clientes/adicionar" id="formulario" name="formulario">
 
         <ul id="progress">
             <li class="ativo">Dados Pessoais</li>
@@ -39,8 +38,18 @@
             <h2>Endereço</h2>
 
             <input type="text" class="endereco" name="cep" id="cep" placeholder="CEP:"></input>
-            <input type="text" class="endereco" name="localidade" id="localidade" placeholder="Cidade:"></input>
-            <input type="text" class="endereco" name="uf" id="uf" placeholder="Estado:"></input>
+
+            <select name="estado" id="estado" onchange="selecionarCidades()">
+                <option value="" disabled selected>Estado</option>
+                <?php foreach($estados as $estado):?>
+                   <option value="<?= $estado->id?>" id="<?= $estado->uf?>"><?= $estado->uf?></option>
+                <?php endforeach;?>
+            </select>
+
+            <select name="cidade" id="cidade" >
+                <option value="" disabled selected>Cidade</option>
+            </select>
+
             <input type="text" class="endereco" name="logradouro" id="logradouro" placeholder="Logradouro:Rua ,Lote ,Quadra " required></input>
             <input type="text" class="endereco" name="bairro" id="bairro" placeholder="bairro:" required></input>
             <input type="text" class="endereco" name="nCasa" id="nCasa" placeholder="Numero:"></input>

@@ -46,10 +46,17 @@ function salvarDados(){
         }
     }
 
-    validarCampos(dados)   
+    validarCampos(dados, array)   
     
 }
-function validarCampos(dados){
+function validarCampos(dados,  array){
+
+    let camposVaziosContatos = 0;
+    array.forEach(function(campo, i) {
+        if(campo['codigo_pais'] == '' || campo['ddd'] == '' || campo['numero'] == ''){
+            camposVaziosContatos = '1';
+        }
+    });
 
     if(dados['dadosPessoais']['nome'] == '' || dados['dadosPessoais']['email'] == ''|| dados['dadosPessoais']['cpf'] == ''){
         let mensageErro = ' E obrigatorio o preechimento de todos os campos de Dados pessoais';
@@ -67,6 +74,9 @@ function validarCampos(dados){
         document.getElementById("cep").focus();
     }else if(dados['endereco']['numero'].length > 10){
         let mensageErro = ' Campo numero contem mais de 10 caracteres'
+        adicionarMensagemErro(mensageErro);
+    }else if(camposVaziosContatos == '1'){
+        let mensageErro = ' E obrigatorio o preechimento de todos os campos de Contatos'
         adicionarMensagemErro(mensageErro);
     }else{
         $('.mensagem').html('');

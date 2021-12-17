@@ -54,7 +54,7 @@
             <input type="text" value="<?php echo $cliente['enderecos']['0']['complemento']?>" id="complemento" placeholder="Complemento:"></input>
 
             <button type="button" class="btnRedirect" id="btnVoltar" onclick="redirecionarTelaIndex()">Voltar</button>
-            <button class="btnRedirect" id="btnEnviar"  onclick="salvarDados()">Salvar</button>
+            <button type="button" class="btnRedirect" id="btnEnviar"  onclick="salvarDados()">Salvar</button>
 
         </fieldset>
     </form>
